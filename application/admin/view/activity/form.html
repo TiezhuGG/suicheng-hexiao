@@ -1,0 +1,114 @@
+<style>
+    .form-control {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .btn-danger {
+        margin-left: 10px;
+    }
+</style>
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">活动名:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name"  class="form-control" name="row[activityname]" type="text"
+                   value="{$row.activityname|htmlentities}" readonly>
+        </div>
+    </div>
+    <div>
+        <p>------------------------------------------------表单设置
+            -----------------------------------------------&nbsp;
+            <a href="javascript:;" class="btn btn-success btn-add" title="{:__('Add')}"><i class="fa fa-plus"></i>{:__('Add')}</a>
+        </p>
+        {if $row['custom']}
+        {foreach $row['custom'] as $item}
+        <div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">标题:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  class="form-control" name="row[title][]" type="text"
+                           value="{$item['title']|default=''}"><a href="javascript:void(0);" class="btn btn-danger btn-del"><i
+                        class="fa fa-trash"></i>删除</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">副标题:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  class="form-control" name="row[futitle][]" type="text"
+                           value="{$item['futitle']|default=''}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">文本类型:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <select  name="row[type][]" data-source="category/selectpage" class="form-control selectpage">
+                            {if $item['type'] eq 1}
+                                <option selected="selected" value="1">图片</option>
+                                <option  value="0">文本</option>
+                            {else}
+                                <option selected="selected" value="0">文本</option>
+                                <option  value="1">图片</option>
+                            {/if}
+                    </select>
+                </div>
+            </div>
+        </div>
+        {/foreach}
+        {else}
+        <div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">标题:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  class="form-control" name="row[title][]" type="text">
+                    <a href="javascript:void(0);" class="btn btn-danger btn-del"><i
+                        class="fa fa-trash"></i>删除</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">副标题:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input  class="form-control" name="row[futitle][]" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">类型:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <select name="row[type][]" data-source="category/selectpage" class="form-control selectpage">
+                        <option selected="selected" >请选择类型</option>
+                        <option value="0" >文本</option>
+                        <option value="1">图片上传</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        {/if}
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
+<script src="/assets/js/jquery-3.3.1.js" ></script>
+<script>
+    $(function () {
+        $('.btn-add').click(function () {
+            var _this = $(this);
+            var html = '<div><p style="padding: 3px;"></p>';
+            html += _this.parent().next().html();
+            html += '</div>';
+            _this.parent().parent().append($(html));
+        });
+        $('#edit-form').on('click', '.btn-del', function () {
+            var divs = $(this).parent().parent().parent();
+            if (divs.siblings('div').size() < 1) {
+                return false;
+            }
+            divs.remove();
+        })
+    })
+</script>

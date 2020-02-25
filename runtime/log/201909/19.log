@@ -1,0 +1,112 @@
+---------------------------------------------------------------
+[ 2019-09-19T09:59:06+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/Getwxuser/get_user_all?code=021v6Rwn03Sg9l1KxHyn0ezVwn0v6RwY
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001536s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.012412s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[ 2019-09-19T09:59:06+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=50&user_id=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000794s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.004667s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 50  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.003435s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 50  AND `vip_id` = 16  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.003707s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE  `id` = 48  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_order` [ RunTime:0.002945s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_order` WHERE  `activity_id` = 50  AND `user_id` = 16  AND `status` = '1'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000673s ]
+---------------------------------------------------------------
+[ 2019-09-19T09:59:07+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=50&openid=ovvUKwtgdbKtSu7xZBP3MpAEHUpg
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001878s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 50  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001356s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 50  AND `deletetime` IS NULL [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001352s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 50  AND `vip_id` = 16  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000461s ]
+---------------------------------------------------------------
+[ 2019-09-19T11:48:39+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin/auth/rule?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002145s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.004999s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.002338s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001659s ]
+---------------------------------------------------------------
+[ 2019-09-19T11:48:40+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000834s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001613s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001452s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.001644s ]
+---------------------------------------------------------------
+[ 2019-09-19T12:08:05+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/Getwxuser/get_user_all?code=081NQMEu1KkLJd0JYsFu10tREu1NQMES
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001251s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.003458s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000583s ]
+---------------------------------------------------------------
+[ 2019-09-19T12:08:05+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=45&user_id=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001022s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.005074s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.002439s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.003966s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE  `id` = 43  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000606s ]
+---------------------------------------------------------------
+[ 2019-09-19T12:08:05+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=45&openid=ovvUKwtgdbKtSu7xZBP3MpAEHUpg
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000962s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.002365s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001651s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 45  AND `deletetime` IS NULL [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001311s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001406s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000606s ]
+---------------------------------------------------------------
+[ 2019-09-19T12:08:05+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/Getwxuser/get_user_all?code=071IE5sg1exUVr0W4lsg1dAosg1IE5st
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000902s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001765s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000562s ]
+---------------------------------------------------------------
+[ 2019-09-19T12:08:06+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=45&user_id=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000885s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001995s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001424s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE  `id` = 43  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2019-09-19T12:08:06+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=45&openid=ovvUKwtgdbKtSu7xZBP3MpAEHUpg
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000842s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001967s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 45  AND `deletetime` IS NULL [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001334s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+[ 2019-09-19T12:08:09+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=45&user_id=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000897s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001967s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001502s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE  `id` = 43  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2019-09-19T12:08:10+08:00 ] 140.243.171.238 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=45&openid=ovvUKwtgdbKtSu7xZBP3MpAEHUpg
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000858s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.002119s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001413s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 45  AND `deletetime` IS NULL [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001278s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000486s ]

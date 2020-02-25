@@ -1,0 +1,26 @@
+[ 2019-08-20T09:02:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001011s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-20T09:02:55+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-20T09:02:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002379s ]
+[ 2019-08-20T09:02:55+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-20T09:02:55+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001684s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-20T09:02:55+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'signlist' [ RunTime:0.000888s ]
+[ 2019-08-20T09:02:55+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_signlist' [ RunTime:0.001028s ]
+[ 2019-08-20T09:02:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_signlist' ORDER BY ORDINAL_POSITION [ RunTime:0.001283s ]
+[ 2019-08-20T09:09:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000077s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-20T09:09:33+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-20T09:09:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010167s ]
+[ 2019-08-20T09:09:33+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-20T09:09:33+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000703s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-20T09:09:33+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'signlist' [ RunTime:0.000744s ]
+[ 2019-08-20T09:09:33+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_signlist' [ RunTime:0.000751s ]
+[ 2019-08-20T09:09:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-20T09:09:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-20T09:09:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003595s ]
+[ 2019-08-20T09:09:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-20T09:09:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-20T09:09:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'signlist' [ RunTime:0.000744s ]
+[ 2019-08-20T09:09:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_signlist' [ RunTime:0.000738s ]
+[ 2019-08-20T09:09:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_signlist' ORDER BY ORDINAL_POSITION [ RunTime:0.001222s ]

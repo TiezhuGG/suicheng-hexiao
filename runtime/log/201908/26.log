@@ -1,0 +1,2735 @@
+---------------------------------------------------------------
+[ 2019-08-26T08:40:02+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/send_notice
+[运行时间：0.660133s] [吞吐率：1.51req/s] [内存消耗：3,554.92kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004555s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.008029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008123s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vY3h3c2hvcC5sZS1jeC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNTI2MjkwOTUzLCJleHAiOjE1MjY4OTU3NTMsIm5iZiI6MTUyNjI5MDk1MywianRpIjoiSENPYlV3UmNFcU9lSEhmSSIsInN1YiI6MiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCJ9.ZoCsEzxtqg19VIgtkbi9rr6Gmu-oFaiuOUyywsiu8D4',
+  'content-type' => 'multipart/form-data; boundary=--------------------------218010947109687725322370',
+  'cache-control' => 'no-cache',
+  'postman-token' => '03691d06-6f53-4d0c-9bff-8069755440b5',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.010112s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: access_token[/Users/apple/Desktop/hexiao/application/api/controller/Message.php:28]
+---------------------------------------------------------------
+[ 2019-08-26T08:41:26+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/send_notice
+[运行时间：0.336939s] [吞吐率：2.97req/s] [内存消耗：3,494.59kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000565s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005623s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005727s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vY3h3c2hvcC5sZS1jeC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNTI2MjkwOTUzLCJleHAiOjE1MjY4OTU3NTMsIm5iZiI6MTUyNjI5MDk1MywianRpIjoiSENPYlV3UmNFcU9lSEhmSSIsInN1YiI6MiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCJ9.ZoCsEzxtqg19VIgtkbi9rr6Gmu-oFaiuOUyywsiu8D4',
+  'content-type' => 'multipart/form-data; boundary=--------------------------249252401835964077666106',
+  'cache-control' => 'no-cache',
+  'postman-token' => '630b4339-35cb-4688-a8b1-1e6eb1c3700c',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004318s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T08:54:38+08:00 ] 192.168.2.184 GET hexiao.com/public/api/message/send_notice
+[运行时间：0.418577s] [吞吐率：2.39req/s] [内存消耗：3,493.94kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000869s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006429s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006534s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hexiao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1566200304,1566262061,1566452516,1566521593',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005627s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T08:56:16+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/send_notice
+[运行时间：0.448228s] [吞吐率：2.23req/s] [内存消耗：3,494.59kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000583s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.009226s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009337s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vY3h3c2hvcC5sZS1jeC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNTI2MjkwOTUzLCJleHAiOjE1MjY4OTU3NTMsIm5iZiI6MTUyNjI5MDk1MywianRpIjoiSENPYlV3UmNFcU9lSEhmSSIsInN1YiI6MiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCJ9.ZoCsEzxtqg19VIgtkbi9rr6Gmu-oFaiuOUyywsiu8D4',
+  'content-type' => 'multipart/form-data; boundary=--------------------------335472377193983269754181',
+  'cache-control' => 'no-cache',
+  'postman-token' => 'b5b16e35-d260-46ba-85c5-28f4653b91dd',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004799s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T08:56:33+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/send_notice
+[运行时间：1.783429s] [吞吐率：0.56req/s] [内存消耗：3,494.88kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005242s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005338s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vY3h3c2hvcC5sZS1jeC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNTI2MjkwOTUzLCJleHAiOjE1MjY4OTU3NTMsIm5iZiI6MTUyNjI5MDk1MywianRpIjoiSENPYlV3UmNFcU9lSEhmSSIsInN1YiI6MiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCJ9.ZoCsEzxtqg19VIgtkbi9rr6Gmu-oFaiuOUyywsiu8D4',
+  'content-type' => 'multipart/form-data; boundary=--------------------------504543382531704992327738',
+  'cache-control' => 'no-cache',
+  'postman-token' => '03ab7d1d-7f1d-4d3c-9b87-52635252a1da',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003521s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:05:32+08:00 ] 192.168.2.184 GET hexiao.com/public/api/message/jump
+[运行时间：0.586463s] [吞吐率：1.71req/s] [内存消耗：3,554.88kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001629s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.018025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.018516s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'jump',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'postman-token' => '540dde01-e078-452a-90af-caaaa4ac578d',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007960s ]
+[ info ] [ RUN ] app\api\controller\Message->jump[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: openid[/Users/apple/Desktop/hexiao/application/api/controller/Message.php:97]
+---------------------------------------------------------------
+[ 2019-08-26T09:05:36+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/jump
+[运行时间：0.446934s] [吞吐率：2.24req/s] [内存消耗：3,555.07kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000083s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005546s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005645s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'jump',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'postman-token' => 'f8ef61db-cac7-43cd-bbf5-bcfc9ef4eb98',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003864s ]
+[ info ] [ RUN ] app\api\controller\Message->jump[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: openid[/Users/apple/Desktop/hexiao/application/api/controller/Message.php:97]
+---------------------------------------------------------------
+[ 2019-08-26T09:05:59+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/jump
+[运行时间：0.395926s] [吞吐率：2.53req/s] [内存消耗：3,495.02kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000590s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006451s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006548s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'jump',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'postman-token' => '2b205cbb-1670-4869-a3b2-4bb8a5450e96',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004382s ]
+[ info ] [ RUN ] app\api\controller\Message->jump[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:07:55+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/jump
+[运行时间：0.409254s] [吞吐率：2.44req/s] [内存消耗：3,494.66kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000264s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.008474s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008695s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'jump',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'postman-token' => '47b42ceb-e089-4f55-87b7-083ae2ab006f',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006627s ]
+[ info ] [ RUN ] app\api\controller\Message->jump[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:28:33+08:00 ] 192.168.2.184 GET 192.168.2.184/public/
+[运行时间：0.111304s] [吞吐率：8.98req/s] [内存消耗：3,602.34kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006652s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006832s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004911s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000957s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /Users/apple/Desktop/hexiao/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:28:36+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/index/login.html
+[运行时间：0.117309s] [吞吐率：8.52req/s] [内存消耗：4,085.34kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.008400s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008505s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://192.168.2.184/public/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003722s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000654s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /Users/apple/Desktop/hexiao/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001120s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:28:37+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/ajax/lang?callback=define&controllername=index&v=1566782916
+[运行时间：0.166380s] [吞吐率：6.01req/s] [内存消耗：4,092.25kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000237s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006267s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006433s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://192.168.2.184/public/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1566782916',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004642s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000849s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/apple/Desktop/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000582s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:28:51+08:00 ] 192.168.2.184 GET 192.168.2.184/public/api/getopenid
+[运行时间：0.156753s] [吞吐率：6.38req/s] [内存消耗：2,988.09kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000256s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.009375s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009690s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'getopenid',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004725s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:29:00+08:00 ] 192.168.2.184 GET 192.168.2.184/public/api/vip/getopenid
+[运行时间：0.106410s] [吞吐率：9.40req/s] [内存消耗：2,988.12kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006170s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006472s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'vip',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003856s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:29:14+08:00 ] 192.168.2.184 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.098047s] [吞吐率：10.20req/s] [内存消耗：3,502.97kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000724s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.008052s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008152s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004514s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:29:29+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.083915s] [吞吐率：11.92req/s] [内存消耗：3,503.69kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000582s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006118s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006216s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004889s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:29:51+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.074019s] [吞吐率：13.51req/s] [内存消耗：3,503.77kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000085s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005234s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005325s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003731s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:29:52+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.072683s] [吞吐率：13.76req/s] [内存消耗：3,503.69kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000088s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005252s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005345s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003742s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:30:04+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.072274s] [吞吐率：13.84req/s] [内存消耗：3,502.57kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000082s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005172s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005267s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565851658,1565949866',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003892s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:30:17+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.073220s] [吞吐率：13.66req/s] [内存消耗：3,503.77kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005103s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005196s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003866s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:30:18+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.073500s] [吞吐率：13.61req/s] [内存消耗：3,503.69kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006192s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006366s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003888s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:30:23+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.072861s] [吞吐率：13.72req/s] [内存消耗：3,503.77kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005320s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005416s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003783s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:30:23+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.072650s] [吞吐率：13.76req/s] [内存消耗：3,503.69kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005372s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005471s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003757s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:31:13+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/getopenid
+[运行时间：0.503079s] [吞吐率：1.99req/s] [内存消耗：3,564.59kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000844s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.012826s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012985s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'postman-token' => 'acfc2945-bc9b-4dae-ae0b-1f0c40cd3a08',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=--------------------------573307555110218931538328',
+  'content-length' => '191',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0216PJQU0Ho2x22IbvTU0VO6RU06PJQP',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007050s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: openid[/Users/apple/Desktop/hexiao/application/api/controller/Message.php:107]
+---------------------------------------------------------------
+[ 2019-08-26T09:32:05+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.074719s] [吞吐率：13.38req/s] [内存消耗：3,503.69kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000085s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005221s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005315s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004493s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:32:07+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.073304s] [吞吐率：13.64req/s] [内存消耗：3,503.77kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005155s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005249s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004227s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:32:07+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.072253s] [吞吐率：13.84req/s] [内存消耗：3,503.69kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005115s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005206s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/15667826708021439 webdebugger port/25536',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-user' => '?F',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003865s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:33:15+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/getopenid
+[运行时间：0.360392s] [吞吐率：2.77req/s] [内存消耗：3,564.59kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000590s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.007426s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007526s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'postman-token' => '88cbfa42-fc0d-4274-8de8-17ba2f7613d3',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=--------------------------355972507770719112691044',
+  'content-length' => '191',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0216PJQU0Ho2x22IbvTU0VO6RU06PJQP',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004180s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: openid[/Users/apple/Desktop/hexiao/application/api/controller/Message.php:107]
+---------------------------------------------------------------
+[ 2019-08-26T09:33:44+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/getopenid
+[运行时间：0.388315s] [吞吐率：2.58req/s] [内存消耗：3,504.25kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000107s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006571s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006688s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'postman-token' => '6bd154ee-eb3c-4124-9cee-2340970e754d',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=--------------------------440433692928001820093892',
+  'content-length' => '191',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0216PJQU0Ho2x22IbvTU0VO6RU06PJQP',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005069s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:33:52+08:00 ] 192.168.2.154 POST 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.376685s] [吞吐率：2.65req/s] [内存消耗：3,505.10kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000098s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005508s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005608s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'content-length' => '37',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:41043',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'empty',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx858a0631c629d47d/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'code' => '071c2LoE0Wl1ak2cE9pE0eSNoE0c2Lot',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003692s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:36:30+08:00 ] 192.168.2.154 POST 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.328687s] [吞吐率：3.04req/s] [内存消耗：3,505.10kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005320s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005415s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'content-length' => '37',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:41043',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'empty',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx858a0631c629d47d/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'code' => '071t0bMG0yxBad22ZkKG0lAsMG0t0bMi',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005639s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:36:56+08:00 ] 192.168.2.154 POST 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.323818s] [吞吐率：3.09req/s] [内存消耗：3,565.44kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006359s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006457s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'content-length' => '37',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:41043',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'empty',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx858a0631c629d47d/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081RUTOl1Ocnun0GaAQl1j25Pl1RUTOi',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003851s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: openid[/Users/apple/Desktop/hexiao/application/api/controller/Message.php:107]
+---------------------------------------------------------------
+[ 2019-08-26T09:37:26+08:00 ] 192.168.2.154 POST 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.371700s] [吞吐率：2.69req/s] [内存消耗：3,505.10kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000142s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006649s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006747s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'content-length' => '37',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:41043',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'empty',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx858a0631c629d47d/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'code' => '011mvjFl1ZAXDn0woXHl1w9CFl1mvjF-',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004494s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:39:54+08:00 ] 192.168.2.154 GET 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.078646s] [吞吐率：12.72req/s] [内存消耗：3,502.57kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000112s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005132s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005224s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565851658,1565949866',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003844s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:40:21+08:00 ] 192.168.2.154 POST 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.385209s] [吞吐率：2.60req/s] [内存消耗：3,505.10kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000089s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005593s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005685s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'content-length' => '37',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:41043',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'empty',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx858a0631c629d47d/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'code' => '071hkIc32s0uzP0GDFc325Tzc32hkIcj',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004292s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:48:13+08:00 ] 192.168.2.154 POST 192.168.2.184/public/api/Message/getopenid
+[运行时间：0.320903s] [吞吐率：3.12req/s] [内存消耗：3,505.10kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005162s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005256s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Message',
+    2 => 'getopenid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'content-length' => '37',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:41043',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'empty',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1907300 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx858a0631c629d47d/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'code' => '021hEGOt0GJnLi1jPaPt0FGSOt0hEGOr',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003791s ]
+[ info ] [ RUN ] app\api\controller\Message->getopenid[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:53:07+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/send_notice
+[运行时间：0.902744s] [吞吐率：1.11req/s] [内存消耗：3,505.63kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005304s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005400s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vY3h3c2hvcC5sZS1jeC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNTI2MjkwOTUzLCJleHAiOjE1MjY4OTU3NTMsIm5iZiI6MTUyNjI5MDk1MywianRpIjoiSENPYlV3UmNFcU9lSEhmSSIsInN1YiI6MiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCJ9.ZoCsEzxtqg19VIgtkbi9rr6Gmu-oFaiuOUyywsiu8D4',
+  'content-type' => 'multipart/form-data; boundary=--------------------------124530792658966291116773',
+  'cache-control' => 'no-cache',
+  'postman-token' => 'a7c57be9-06ff-4d2b-8877-3260869ab744',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003797s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:53:39+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/send_notice
+[运行时间：0.886134s] [吞吐率：1.13req/s] [内存消耗：3,565.50kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000085s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005132s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005226s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vY3h3c2hvcC5sZS1jeC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNTI2MjkwOTUzLCJleHAiOjE1MjY4OTU3NTMsIm5iZiI6MTUyNjI5MDk1MywianRpIjoiSENPYlV3UmNFcU9lSEhmSSIsInN1YiI6MiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCJ9.ZoCsEzxtqg19VIgtkbi9rr6Gmu-oFaiuOUyywsiu8D4',
+  'content-type' => 'multipart/form-data; boundary=--------------------------184829115916481766241627',
+  'cache-control' => 'no-cache',
+  'postman-token' => '4bfc3122-0607-401e-b355-4183d74ad4dd',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005145s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Illegal string offset 'errcode'[/Users/apple/Desktop/hexiao/application/api/controller/Message.php:35]
+---------------------------------------------------------------
+[ 2019-08-26T09:53:54+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/send_notice
+[运行时间：0.953463s] [吞吐率：1.05req/s] [内存消耗：3,505.66kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000107s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.020975s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.025597s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vY3h3c2hvcC5sZS1jeC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNTI2MjkwOTUzLCJleHAiOjE1MjY4OTU3NTMsIm5iZiI6MTUyNjI5MDk1MywianRpIjoiSENPYlV3UmNFcU9lSEhmSSIsInN1YiI6MiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCJ9.ZoCsEzxtqg19VIgtkbi9rr6Gmu-oFaiuOUyywsiu8D4',
+  'content-type' => 'multipart/form-data; boundary=--------------------------549247840600219761058751',
+  'cache-control' => 'no-cache',
+  'postman-token' => 'a666228d-7c07-473d-90ab-5b147bfe6a2a',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.010951s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:54:36+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/send_notice
+[运行时间：0.863146s] [吞吐率：1.16req/s] [内存消耗：3,564.63kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000085s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005850s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005947s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vY3h3c2hvcC5sZS1jeC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNTI2MjkwOTUzLCJleHAiOjE1MjY4OTU3NTMsIm5iZiI6MTUyNjI5MDk1MywianRpIjoiSENPYlV3UmNFcU9lSEhmSSIsInN1YiI6MiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCJ9.ZoCsEzxtqg19VIgtkbi9rr6Gmu-oFaiuOUyywsiu8D4',
+  'content-type' => 'multipart/form-data; boundary=--------------------------700928432693918371304607',
+  'cache-control' => 'no-cache',
+  'postman-token' => 'b08431e1-86cd-4bb2-98ec-14d994c0114b',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004214s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Cannot use object of type stdClass as array[/Users/apple/Desktop/hexiao/application/api/controller/Message.php:35]
+---------------------------------------------------------------
+[ 2019-08-26T09:55:06+08:00 ] 192.168.2.184 POST hexiao.com/public/api/message/send_notice
+[运行时间：0.870421s] [吞吐率：1.15req/s] [内存消耗：3,566.03kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005566s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005664s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'message',
+    2 => 'send_notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vY3h3c2hvcC5sZS1jeC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNTI2MjkwOTUzLCJleHAiOjE1MjY4OTU3NTMsIm5iZiI6MTUyNjI5MDk1MywianRpIjoiSENPYlV3UmNFcU9lSEhmSSIsInN1YiI6MiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCJ9.ZoCsEzxtqg19VIgtkbi9rr6Gmu-oFaiuOUyywsiu8D4',
+  'content-type' => 'multipart/form-data; boundary=--------------------------466060491130626865253073',
+  'cache-control' => 'no-cache',
+  'postman-token' => 'e591935d-e122-49f8-9504-ab5152c46ea5',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'accept' => '*/*',
+  'host' => 'hexiao.com',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004360s ]
+[ info ] [ RUN ] app\api\controller\Message->send_notice[ /Users/apple/Desktop/hexiao/application/api/controller/Message.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[/Users/apple/Desktop/hexiao/application/api/controller/Message.php:34]
+---------------------------------------------------------------
+[ 2019-08-26T09:55:52+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin
+[运行时间：0.095861s] [吞吐率：10.43req/s] [内存消耗：3,558.38kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005770s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005866s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005698s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000274s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:55:55+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/index/login?url=%2Fpublic%2Fadmin
+[运行时间：0.186588s] [吞吐率：5.36req/s] [内存消耗：4,085.76kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000189s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.014420s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.014623s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://192.168.2.184/public/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/public/admin',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005992s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000829s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /Users/apple/Desktop/hexiao/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000525s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:55:56+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/ajax/lang?callback=define&controllername=index&v=1566784555
+[运行时间：0.159396s] [吞吐率：6.27req/s] [内存消耗：4,092.27kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000135s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.020750s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.021047s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://192.168.2.184/public/admin/index/login?url=%2Fpublic%2Fadmin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1566784555',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007838s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000719s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/apple/Desktop/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000370s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:56:10+08:00 ] 192.168.2.184 POST 192.168.2.184/public/admin/index/login?url=%2Fpublic%2Fadmin
+[运行时间：0.235492s] [吞吐率：4.25req/s] [内存消耗：5,006.47kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000098s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005535s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005625s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://192.168.2.184',
+  'referer' => 'http://192.168.2.184/public/admin/index/login?url=%2Fpublic%2Fadmin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/public/admin',
+  '__token__' => '5918c37c45846cbb8f6edf5a532af41b',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005332s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000626s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /Users/apple/Desktop/hexiao/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.009583s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001851s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.012810s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.002383s ]
+[ sql ] [ SQL ] UPDATE `hx_admin`  SET `logintime`=1566784570,`token`='dba90597-d629-442f-a628-251df22713dc',`updatetime`=1566784570  WHERE  `id` = 1 [ RunTime:0.002527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.004407s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/public\\/admin\",\"__token__\":\"5918c37c45846cbb8f6edf5a532af41b\",\"username\":\"admin\"}' , '/public/admin/index/login?url=%2Fpublic%2Fadmin' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36' , '192.168.2.184' , 1566784570) [ RunTime:0.001622s ]
+---------------------------------------------------------------
+[ 2019-08-26T09:56:10+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin
+[运行时间：0.353642s] [吞吐率：2.83req/s] [内存消耗：5,373.58kb] [文件加载：151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000105s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006682s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006890s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://192.168.2.184/public/admin/index/login?url=%2Fpublic%2Fadmin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004289s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000577s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Users/apple/Desktop/hexiao/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/index/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000255s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000760s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.002220s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.004649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.002528s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001334s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.001284s ]
+---------------------------------------------------------------
+[ 2019-08-26T09:56:10+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/ajax/lang?callback=define&controllername=index&v=1566784570
+[运行时间：0.133110s] [吞吐率：7.51req/s] [内存消耗：4,094.05kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000096s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006360s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006458s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://192.168.2.184/public/admin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1566784570',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004219s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000519s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/apple/Desktop/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000262s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:56:11+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/auth/admin?addtabs=1
+[运行时间：0.241761s] [吞吐率：4.14req/s] [内存消耗：5,289.63kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000102s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.008221s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008319s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth.admin',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://192.168.2.184/public/admin/auth/admin?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003702s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000948s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/auth/admin.php
+[ info ] [ RUN ] app\admin\controller\auth\Admin->index[ /Users/apple/Desktop/hexiao/application/admin/controller/auth/Admin.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/auth/admin/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'groupdata',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000334s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000910s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001617s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001295s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001507s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001314s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000771s ]
+---------------------------------------------------------------
+[ 2019-08-26T09:56:11+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/ajax/lang?callback=define&controllername=auth.admin&v=1566784571
+[运行时间：0.096792s] [吞吐率：10.33req/s] [内存消耗：4,089.23kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005307s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005403s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://192.168.2.184/public/admin/auth/admin?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'auth.admin',
+  'v' => '1566784571',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003796s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.001143s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/apple/Desktop/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/auth/admin.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000699s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:56:12+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566784571484
+[运行时间：0.314228s] [吞吐率：3.18req/s] [内存消耗：5,310.02kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000196s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.007442s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007603s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth.admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://192.168.2.184/public/admin/auth/admin?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1566784571484',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004561s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.001120s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/auth/admin.php
+[ info ] [ RUN ] app\admin\controller\auth\Admin->index[ /Users/apple/Desktop/hexiao/application/admin/controller/auth/Admin.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000279s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.004715s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001826s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001357s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001603s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001778s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.007644s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000743s ]
+---------------------------------------------------------------
+[ 2019-08-26T09:56:13+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/vip?addtabs=1
+[运行时间：0.148632s] [吞吐率：6.73req/s] [内存消耗：5,051.28kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000086s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.008369s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008467s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vip',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://192.168.2.184/public/admin/vip?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003518s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000517s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/vip.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /Users/apple/Desktop/hexiao/application/admin/library/traits/Backend.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/vip/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'adutimanList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000250s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000683s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'vip' LIMIT 1 [ RunTime:0.000803s ]
+---------------------------------------------------------------
+[ 2019-08-26T09:56:13+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/ajax/lang?callback=define&controllername=vip&v=1566784573
+[运行时间：0.133352s] [吞吐率：7.50req/s] [内存消耗：4,089.80kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000190s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.007218s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007368s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://192.168.2.184/public/admin/vip?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'vip',
+  'v' => '1566784573',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005229s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.001022s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/apple/Desktop/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/vip.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000263s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:56:14+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/activity?addtabs=1
+[运行时间：0.168984s] [吞吐率：5.92req/s] [内存消耗：5,729.88kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005120s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'activity',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://192.168.2.184/public/admin/activity?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003736s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000532s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/activity.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /Users/apple/Desktop/hexiao/application/admin/library/traits/Backend.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/activity/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'notchargeList',
+  6 => 'notauditList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000757s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000746s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001133s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001356s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'activity' LIMIT 1 [ RunTime:0.000880s ]
+---------------------------------------------------------------
+[ 2019-08-26T09:56:14+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/vip/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566784573413
+[运行时间：0.289226s] [吞吐率：3.46req/s] [内存消耗：5,107.19kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000099s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005358s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005454s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vip',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://192.168.2.184/public/admin/vip?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1566784573413',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003516s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000616s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/vip.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /Users/apple/Desktop/hexiao/application/admin/library/traits/Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000672s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001187s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.002895s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_vip` WHERE `hx_vip`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE `hx_vip`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000863s ]
+---------------------------------------------------------------
+[ 2019-08-26T09:56:14+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/ajax/lang?callback=define&controllername=activity&v=1566784573
+[运行时间：0.110164s] [吞吐率：9.08req/s] [内存消耗：4,090.78kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.007621s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007715s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://192.168.2.184/public/admin/activity?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'activity',
+  'v' => '1566784573',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003592s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000517s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/apple/Desktop/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/activity.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000246s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:56:14+08:00 ] 192.168.2.184 GET 192.168.2.184/public/uploads/20190801/a5b1bfbae24e2459519e47792f512953.jpg
+[运行时间：0.155817s] [吞吐率：6.42req/s] [内存消耗：2,761.25kb] [文件加载：114]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000118s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.007058s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007159s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190801',
+    2 => 'a5b1bfbae24e2459519e47792f512953.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.2.184/public/admin/vip?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T09:56:14+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566784574139
+[运行时间：0.246740s] [吞吐率：4.05req/s] [内存消耗：5,804.24kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000100s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006796s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006895s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'activity',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://192.168.2.184/public/admin/activity?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1566784574139',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004326s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000982s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/activity.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /Users/apple/Desktop/hexiao/application/admin/library/traits/Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000250s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000749s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002033s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001140s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.025400s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001210s ]
+---------------------------------------------------------------
+[ 2019-08-26T10:02:08+08:00 ] 192.168.2.196 GET 192.168.2.184/public/admin
+[运行时间：0.079743s] [吞吐率：12.54req/s] [内存消耗：3,554.62kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000104s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005420s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005519s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.2.184',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004347s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000274s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T10:02:18+08:00 ] 192.168.2.196 GET 192.168.2.184/public/admin/index/login?url=%2Fpublic%2Fadmin
+[运行时间：0.084912s] [吞吐率：11.78req/s] [内存消耗：4,083.85kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000081s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005337s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005433s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://192.168.2.184/public/admin',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.2.184',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=htv828tfidqfti0dlf7avhld3c',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/public/admin',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003846s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000531s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /Users/apple/Desktop/hexiao/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000251s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T10:02:29+08:00 ] 192.168.2.196 GET 192.168.2.184/public/admin/index/login?url=%2Fpublic%2Fadmin
+[运行时间：0.084500s] [吞吐率：11.83req/s] [内存消耗：4,084.02kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005294s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005389s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'referer' => 'http://192.168.2.184/public/admin',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.2.184',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=htv828tfidqfti0dlf7avhld3c',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/public/admin',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004083s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000509s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /Users/apple/Desktop/hexiao/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000270s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T10:03:44+08:00 ] 192.168.2.196 GET 192.168.2.184/public/admin/index/login?url=%2Fpublic%2Fadmin
+[运行时间：0.083615s] [吞吐率：11.96req/s] [内存消耗：4,083.86kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000084s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005313s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005408s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.2.184',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=htv828tfidqfti0dlf7avhld3c',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/public/admin',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003948s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000516s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /Users/apple/Desktop/hexiao/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000252s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T10:03:55+08:00 ] 192.168.2.196 GET 192.168.2.184/public/admin/index/login?url=%2Fpublic%2Fadmin
+[运行时间：0.097075s] [吞吐率：10.30req/s] [内存消耗：4,083.86kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000584s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.005756s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005857s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.2.184',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=htv828tfidqfti0dlf7avhld3c',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/public/admin',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005411s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000545s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /Users/apple/Desktop/hexiao/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Users/apple/Desktop/hexiao/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000252s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-26T10:04:07+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566784574140
+[运行时间：0.208653s] [吞吐率：4.79req/s] [内存消耗：5,804.24kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000091s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.006156s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006254s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'activity',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://192.168.2.184/public/admin/activity?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1566784574140',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006474s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000624s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/activity.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /Users/apple/Desktop/hexiao/application/admin/library/traits/Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000247s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000962s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001139s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001527s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001025s ]
+---------------------------------------------------------------
+[ 2019-08-26T10:04:08+08:00 ] 192.168.2.184 GET 192.168.2.184/public/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566784574141
+[运行时间：0.280728s] [吞吐率：3.56req/s] [内存消耗：5,804.24kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.011479s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011580s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'activity',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.2.184',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+  'content-type' => 'application/json',
+  'referer' => 'http://192.168.2.184/public/admin/activity?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1565684686,1566555654,1566782914; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1566782914; PHPSESSID=0eheanqs4agppk6ip14bqa0ikk',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1566784574141',
+)
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005837s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000877s ]
+[ info ] [ LANG ] /Users/apple/Desktop/hexiao/public/../application/admin/lang/zh-cn/activity.php
+[ info ] [ RUN ] app\common\controller\Backend->index[ /Users/apple/Desktop/hexiao/application/admin/library/traits/Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000615s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001633s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.005173s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.003835s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001361s ]

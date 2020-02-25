@@ -1,0 +1,39 @@
+<form id="form-form" class="form-horizontal" name="iddd" role="form" data-toggle="validator" method="POST" action="">
+
+    {foreach name="row" item="vo"}
+    {if $vo.type==0}
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{$vo.title}</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="radio">
+                <input id="c-signtime" class="form-control datetimepicker" data-use-current="true"  type="text" value="{$vo.content}">
+            </div>
+        </div>
+    </div>
+    {else}
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{$vo.title}：</label>
+        <div class="col-xs-12 col-sm-8">
+            <img onmousemove="bigImg(this)" src="{$vo.content}" style="width: 100px;height: 60px">
+        </div>
+    </div>
+    {/if}
+    {/foreach}
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
+<script language=javascript>
+    document.iddd.文本框名称.focus();
+</script>
+<script src="/assets/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    function bigImg(x){
+        x.style.height="300px";
+        x.style.width="300px";
+    }
+</script>

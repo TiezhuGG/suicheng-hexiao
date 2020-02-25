@@ -1,0 +1,56 @@
+[ 2019-08-28T14:08:05+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002017s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-28T14:08:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'paper' [ RunTime:0.001044s ]
+[ 2019-08-28T14:08:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_paper' [ RunTime:0.000803s ]
+[ 2019-08-28T14:08:05+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_paper' ORDER BY ORDINAL_POSITION [ RunTime:0.001170s ]
+[ 2019-08-28T14:32:14+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000062s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-28T14:32:14+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-28T14:32:14+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005634s ]
+[ 2019-08-28T14:32:14+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000140s ]
+[ 2019-08-28T14:32:14+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000390s ]
+[ 2019-08-28T14:32:14+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-28T14:32:14+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000740s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-28T14:32:14+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'paper' [ RunTime:0.000797s ]
+[ 2019-08-28T14:32:14+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_paper' [ RunTime:0.000800s ]
+[ 2019-08-28T14:32:23+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-28T14:32:23+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-28T14:32:23+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004829s ]
+[ 2019-08-28T14:32:23+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000134s ]
+[ 2019-08-28T14:32:23+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000414s ]
+[ 2019-08-28T14:32:23+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-28T14:32:23+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000743s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-28T14:32:23+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'paper' [ RunTime:0.000794s ]
+[ 2019-08-28T14:32:23+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_paper' [ RunTime:0.000797s ]
+[ 2019-08-28T14:32:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000095s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-28T14:32:30+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-28T14:32:30+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004729s ]
+[ 2019-08-28T14:32:30+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000058s ]
+[ 2019-08-28T14:32:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000222s ]
+[ 2019-08-28T14:32:30+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-28T14:32:30+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000780s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-28T14:32:30+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'paper' [ RunTime:0.000789s ]
+[ 2019-08-28T14:32:30+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_paper' [ RunTime:0.000806s ]
+[ 2019-08-28T14:32:30+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_paper' ORDER BY ORDINAL_POSITION [ RunTime:0.001170s ]
+[ 2019-08-28T14:32:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-28T14:32:59+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-28T14:32:59+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005137s ]
+[ 2019-08-28T14:32:59+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000060s ]
+[ 2019-08-28T14:32:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000232s ]
+[ 2019-08-28T14:32:59+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-28T14:32:59+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000717s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-28T14:32:59+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'paper' [ RunTime:0.000859s ]
+[ 2019-08-28T14:32:59+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_paper' [ RunTime:0.000817s ]
+[ 2019-08-28T14:33:18+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-28T14:33:18+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-28T14:33:19+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005249s ]
+[ 2019-08-28T14:33:19+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000064s ]
+[ 2019-08-28T14:33:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000303s ]
+[ 2019-08-28T14:33:19+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-28T14:33:19+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000771s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-28T14:33:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'paper' [ RunTime:0.000800s ]
+[ 2019-08-28T14:33:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_paper' [ RunTime:0.000809s ]
+[ 2019-08-28T14:33:19+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_paper' ORDER BY ORDINAL_POSITION [ RunTime:0.001173s ]

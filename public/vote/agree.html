@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="js/rem.js"></script>
+		<script src="https://cn.vuejs.org/js/vue.min.js"></script>
+		<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- <script src="js/vue.js"></script> -->
+		<title>服务条款</title>
+		<link rel="stylesheet" href="css/common.css">
+	</head>
+	<body>
+		<div id="agree">
+			<!-- 服务条款 -->
+			<div class="agree">
+				<!-- <div class="title">服务协议</div> -->
+				<div class="ent" v-html="code">
+				</div>
+			</div>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#agree',
+				data: {
+					url: 'http://hx.le-cx.com/',
+					code:'',
+					config: {
+						res:'',
+						code:'',
+						uid:'',
+						openid:'',
+						name:'',
+						pid:'',
+						appid: 'wxd6f30cb38ce4a273'
+					} 
+				},
+				created: function () {
+					var _ = this;
+					_.userinfo(); 
+					// _.test();
+				},
+				methods: {
+					test(){
+						var _ = this;
+						_.config.uid = 7;
+						_.config.openid = 'ovvUKwoerIWLGoSupJhv5QGO32gs';
+						_.config.name = '也许';
+						_.config.pid = _.GetQueryString('paper_id');
+						
+						axios.get(_.url+'api/sign/hexiao', {
+							params: {
+								signlist_id: _.config.pid,
+								openid: _.config.openid
+							}
+						}).then(function (res) {
+							alert(res.data.Msg);
+						});
+					},
+					userinfo(){
+						var _ = this;
+						axios.get(_.url+'api/vip/getservice', {
+							params: {
+							}
+						}).then(function (res) {
+							_.code = res.data.data.content;
+							if(_.code!=200){
+								// alert(res.data.msg);
+							}
+						});
+					},
+					GetQueryString(name){
+					    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+					    var r = window.location.search.substr(1).match(reg);//search,查询？后面的参数，并匹配正则
+					    if(r!=null)return r[2]; return null;
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

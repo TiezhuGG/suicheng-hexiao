@@ -1,0 +1,841 @@
+---------------------------------------------------------------
+[ 2019-09-16T09:03:47+08:00 ] 120.42.185.40 POST hx.le-cx.com/index.php/admin/index/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000776s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.020419s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] UPDATE `hx_admin`  SET `logintime`=1568595827,`token`='82b3e431-3301-424b-bf35-74f09d0092a3',`updatetime`=1568595827  WHERE  `id` = 1 [ RunTime:0.007054s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.003235s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"f9691bc0d2a57bc673cdbec2ccfe996f\",\"username\":\"admin\"}' , '/index.php/admin/index/login' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36' , '120.42.185.40' , 1568595827) [ RunTime:0.002749s ]
+---------------------------------------------------------------
+[ 2019-09-16T09:03:48+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.002755s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001948s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.002316s ]
+---------------------------------------------------------------
+[ 2019-09-16T09:03:48+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000869s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001592s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001455s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.002063s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001577s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000698s ]
+---------------------------------------------------------------
+[ 2019-09-16T09:03:49+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568595828852
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000777s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001828s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001715s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001291s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2019-09-16T09:04:17+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000820s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001704s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001427s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001801s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'activity' LIMIT 1 [ RunTime:0.000603s ]
+---------------------------------------------------------------
+[ 2019-09-16T09:04:18+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568595857678
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000788s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001660s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001591s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001898s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001516s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwojtVXpL2RklhIMcFKB0X3Y'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:03:46+08:00 ] 140.243.189.162 POST hx.le-cx.com/index.php/admin/index/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000787s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001634s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] UPDATE `hx_admin`  SET `logintime`=1568599426,`token`='8eb4915a-c38c-4d43-935d-f3a36a64151e',`updatetime`=1568599426  WHERE  `id` = 1 [ RunTime:0.005883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001672s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"2836a7f33d67a0cac7ea6ec2a895e098\",\"username\":\"admin\"}' , '/index.php/admin/index/login' , 1 , 'admin' , 'Mozilla/5.0 (Linux; Android 8.1.0; vivo Y71A Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.12 baiduboxapp/11.12.0.10 (Baidu; P1 8.1.0)' , '140.243.189.162' , 1568599426) [ RunTime:0.003540s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:03:48+08:00 ] 140.243.189.162 GET hx.le-cx.com/index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000891s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001724s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001388s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001229s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000918s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:03:51+08:00 ] 140.243.189.162 GET hx.le-cx.com/index.php/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000862s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001607s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001202s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.002815s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001365s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000428s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:03:53+08:00 ] 140.243.189.162 GET hx.le-cx.com/index.php/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568599430450
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000857s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001656s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001489s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001781s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001373s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000453s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:03:59+08:00 ] 140.243.189.162 GET hx.le-cx.com/index.php/admin/auth/admin/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000864s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001667s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.002004s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001423s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000561s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:21:19+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001050s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001633s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001346s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001172s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:21:20+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000823s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001565s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001426s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001261s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000829s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:21:20+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001569s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001469s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001764s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'activity' LIMIT 1 [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:21:22+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000818s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001689s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001471s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.002180s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001536s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000479s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:21:22+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568600481119
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000803s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001624s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001357s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001746s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001479s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwojtVXpL2RklhIMcFKB0X3Y'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:21:23+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568600482501
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000931s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001800s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001433s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001835s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001321s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:21:24+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568600482502
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000828s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001623s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001408s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001866s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001354s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2019-09-16T10:21:25+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568600481120
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000802s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001636s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001776s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001612s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwojtVXpL2RklhIMcFKB0X3Y'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000341s ]
+---------------------------------------------------------------
+[ 2019-09-16T11:49:12+08:00 ] 120.42.185.40 POST hx.le-cx.com/admin/index/login?url=%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000894s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001716s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] UPDATE `hx_admin`  SET `logintime`=1568605752,`token`='feee38ff-fe67-4647-bf00-9327f3a55e05',`updatetime`=1568605752  WHERE  `id` = 1 [ RunTime:0.005343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001582s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/admin\",\"__token__\":\"10e57c7212cb03d3dfc64ea6707f2ff6\",\"username\":\"admin\"}' , '/admin/index/login?url=%2Fadmin' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36' , '120.42.185.40' , 1568605752) [ RunTime:0.003196s ]
+---------------------------------------------------------------
+[ 2019-09-16T11:49:13+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001845s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001456s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.001030s ]
+---------------------------------------------------------------
+[ 2019-09-16T11:49:14+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000829s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001592s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001357s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001873s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001382s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2019-09-16T11:49:15+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568605755830
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000862s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001660s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001871s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001359s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2019-09-16T11:49:23+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin/order?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001674s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001480s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001306s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'order' LIMIT 1 [ RunTime:0.000798s ]
+---------------------------------------------------------------
+[ 2019-09-16T11:49:24+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin/order/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568605764546
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001089s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001832s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001675s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_order` [ RunTime:0.002985s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_order` WHERE `hx_order`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_order` WHERE `hx_order`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001699s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2019-09-16T11:49:29+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin/activity?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000808s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001601s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001567s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001695s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'activity' LIMIT 1 [ RunTime:0.000437s ]
+---------------------------------------------------------------
+[ 2019-09-16T11:49:29+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568605770338
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000966s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001661s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001802s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001545s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwojtVXpL2RklhIMcFKB0X3Y'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2019-09-16T11:49:30+08:00 ] 120.42.185.40 GET hx.le-cx.com/admin/order/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568605764547
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000793s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001580s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001436s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_order` [ RunTime:0.001646s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_order` WHERE `hx_order`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_order` WHERE `hx_order`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001612s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000406s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:56:32+08:00 ] 120.42.185.40 POST hx.le-cx.com/index.php/admin/index/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.003246s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] UPDATE `hx_admin`  SET `logintime`=1568624192,`token`='bc5019b5-132a-4b10-b93b-50cdf5bd7591',`updatetime`=1568624192  WHERE  `id` = 1 [ RunTime:0.002958s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.003175s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"d125670a040866e5b52601e2eeb351d5\",\"username\":\"admin\"}' , '/index.php/admin/index/login' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.7.0.18838' , '120.42.185.40' , 1568624192) [ RunTime:0.002830s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:56:33+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000894s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.002692s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.002033s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001202s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000957s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:56:34+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001516s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001683s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001450s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001943s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001571s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000507s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:56:35+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568624199379
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000773s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001591s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001381s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001764s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000375s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:56:47+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/signlist?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.004181s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001502s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.004585s ]
+[ sql ] [ SQL ] SELECT `id`,`activityname` FROM `hx_activity` WHERE  `deletetime` IS NULL [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.004132s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `deletetime` IS NULL [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'signlist' LIMIT 1 [ RunTime:0.000695s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:56:48+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/signlist/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568624212521
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000788s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001600s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001472s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001852s ]
+[ sql ] [ SQL ] SELECT `id`,`activityname` FROM `hx_activity` WHERE  `deletetime` IS NULL [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `deletetime` IS NULL [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.002178s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000365s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:57:11+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/signlist/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568624212522
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000816s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001616s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001466s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001942s ]
+[ sql ] [ SQL ] SELECT `id`,`activityname` FROM `hx_activity` WHERE  `deletetime` IS NULL [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `deletetime` IS NULL [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:57:15+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/signlist/index?addtabs=1&sort=id&order=desc&offset=10&limit=10&filter=%7B%7D&op=%7B%7D&_=1568624212523
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000885s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001678s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001442s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.004249s ]
+[ sql ] [ SQL ] SELECT `id`,`activityname` FROM `hx_activity` WHERE  `deletetime` IS NULL [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001607s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `deletetime` IS NULL [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001612s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 10,10 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:57:33+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/signlist/index?addtabs=1&sort=id&order=desc&offset=10&limit=10&filter=%7B%7D&op=%7B%7D&_=1568624212524
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000818s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001627s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001421s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001990s ]
+[ sql ] [ SQL ] SELECT `id`,`activityname` FROM `hx_activity` WHERE  `deletetime` IS NULL [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `deletetime` IS NULL [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 10,10 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:57:42+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000900s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001646s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001459s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001744s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'activity' LIMIT 1 [ RunTime:0.000488s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:57:43+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568624266985
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000865s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001656s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001391s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001808s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001482s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwojtVXpL2RklhIMcFKB0X3Y'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000348s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:57:50+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000826s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001606s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001847s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000591s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:57:50+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity/jquery.qrcode.min.js
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001754s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001811s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000577s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:58:01+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/signlist/index?addtabs=1&sort=id&order=desc&offset=10&limit=10&filter=%7B%7D&op=%7B%7D&_=1568624212525
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000891s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001635s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001430s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001993s ]
+[ sql ] [ SQL ] SELECT `id`,`activityname` FROM `hx_activity` WHERE  `deletetime` IS NULL [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001394s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `deletetime` IS NULL [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001421s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 10,10 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:58:10+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/signlist/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%22status%22%3A%220%22%7D&op=%7B%22status%22%3A%22%3D%22%7D&_=1568624212526
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000788s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001540s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001367s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.002008s ]
+[ sql ] [ SQL ] SELECT `id`,`activityname` FROM `hx_activity` WHERE  `deletetime` IS NULL [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001299s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `deletetime` IS NULL [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001514s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_signlist` WHERE (  (  `status` = '0' ) ) AND `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE (  (  `status` = '0' ) ) AND `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.001613s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:58:26+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/signlist/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001584s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001442s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001799s ]
+[ sql ] [ SQL ] SELECT `id`,`activityname` FROM `hx_activity` WHERE  `deletetime` IS NULL [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `deletetime` IS NULL [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000412s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:58:35+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568624266986
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000915s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001709s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001463s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001808s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001566s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwojtVXpL2RklhIMcFKB0X3Y'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:59:27+08:00 ] 120.42.185.40 POST hx.le-cx.com/index.php/admin/ajax/upload
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_attachment` [ RunTime:0.002588s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_attachment` WHERE  `url` = '/uploads/20190916/da996b910669ef265f1ba7917cd625ec.jpg' LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] INSERT INTO `hx_attachment` (`admin_id` , `filesize` , `imagewidth` , `imageheight` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `extparam` , `createtime` , `updatetime`) VALUES (1 , 45986 , '1063' , '1063' , 'jpg' , 'image/jpeg' , '/uploads/20190916/da996b910669ef265f1ba7917cd625ec.jpg' , 1568624367 , 'local' , '28135bae45f6ee361c32af4dcf16a8fa9127c252' , '{\"name\":\"\\u5546\\u6807.jpg\"}' , 1568624367 , 1568624367) [ RunTime:0.003292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001579s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"\\u5546\\u6807.jpg\"}' , '/index.php/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.7.0.18838' , '120.42.185.40' , 1568624367) [ RunTime:0.002429s ]
+---------------------------------------------------------------
+[ 2019-09-16T16:59:42+08:00 ] 120.42.185.40 POST hx.le-cx.com/index.php/admin/ajax/upload
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000865s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_attachment` [ RunTime:0.001825s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_attachment` WHERE  `url` = '/uploads/20190916/cace68afd402b2257d33f6b8f96b83e7.jpg' LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] INSERT INTO `hx_attachment` (`admin_id` , `filesize` , `imagewidth` , `imageheight` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `extparam` , `createtime` , `updatetime`) VALUES (1 , 23539 , '500' , '338' , 'jpg' , 'image/jpeg' , '/uploads/20190916/cace68afd402b2257d33f6b8f96b83e7.jpg' , 1568624382 , 'local' , 'a119c404a14892cfbcd2643d6726749f61f39797' , '{\"name\":\"\\u56fe\\u7247.jpg\"}' , 1568624382 , 1568624382) [ RunTime:0.003485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001677s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"\\u56fe\\u7247.jpg\"}' , '/index.php/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.7.0.18838' , '120.42.185.40' , 1568624382) [ RunTime:0.003297s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:01:23+08:00 ] 120.42.185.40 POST hx.le-cx.com/index.php/admin/ajax/upload
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000826s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_attachment` [ RunTime:0.001966s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_attachment` WHERE  `url` = '/uploads/20190916/da996b910669ef265f1ba7917cd625ec.jpg' LIMIT 1 [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001604s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"\\u5546\\u6807.jpg\"}' , '/index.php/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.7.0.18838' , '120.42.185.40' , 1568624483) [ RunTime:0.003910s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:01:41+08:00 ] 120.42.185.40 POST hx.le-cx.com/index.php/admin/ajax/upload
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000868s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_attachment` [ RunTime:0.001683s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_attachment` WHERE  `url` = '/uploads/20190916/406051ee3b7bb7deca6d2cb706cfc5c5.jpg' LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] INSERT INTO `hx_attachment` (`admin_id` , `filesize` , `imagewidth` , `imageheight` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `extparam` , `createtime` , `updatetime`) VALUES (1 , 909967 , '909' , '1920' , 'jpg' , 'image/jpeg' , '/uploads/20190916/406051ee3b7bb7deca6d2cb706cfc5c5.jpg' , 1568624501 , 'local' , '54c1fdaf49b2fd1ceae1b1f6178f885b0c06dfe1' , '{\"name\":\"\\u4e8c\\u7ef4\\u7801.jpg\"}' , 1568624501 , 1568624501) [ RunTime:0.015169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001733s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"\\u4e8c\\u7ef4\\u7801.jpg\"}' , '/index.php/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.7.0.18838' , '120.42.185.40' , 1568624501) [ RunTime:0.002933s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:12:47+08:00 ] 120.42.185.40 POST hx.le-cx.com/index.php/admin/activity/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001082s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001772s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001436s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.002112s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001880s ]
+[ sql ] [ SQL ] INSERT INTO `hx_activity` (`activityname` , `logo` , `activityimages` , `organizers` , `address` , `block` , `public_name` , `public_desc` , `public_logo` , `rqcode` , `views` , `navigation_x` , `navigation_y` , `signuptime` , `signupendtime` , `audittime` , `auditendtime` , `statrtime` , `endtime` , `signupnum` , `notcharge` , `charge` , `notaudit` , `signupmust` , `audit_id` , `createtime` , `updatetime`) VALUES ('晋江市委干部职工宿舍室内装饰工程' , '/uploads/20190916/da996b910669ef265f1ba7917cd625ec.jpg' , '/uploads/20190916/cace68afd402b2257d33f6b8f96b83e7.jpg' , '泉州市绥诚工程管理有限公司' , '晋江市' , '1' , '泉州市绥诚工程管理有限公司' , '泉州市绥诚工程管理有限公司' , '/uploads/20190916/da996b910669ef265f1ba7917cd625ec.jpg' , '/uploads/20190916/406051ee3b7bb7deca6d2cb706cfc5c5.jpg' , 200 , '118.558433' , '24.787825' , 1568624270 , '2019-09-18 16:57:50' , 1568797070 , '2019-09-18 16:57:50' , '2019-09-18 16:57:50' , '2019-09-18 16:57:50' , 10 , '0' , 0 , '0' , '' , '' , 1568625167 , 1568625167) [ RunTime:0.000767s ]
+[ sql ] [ SQL ] UPDATE `hx_activity`  SET `url_address`='hx.le-cx.com/vote?activity_id=48'  WHERE  `id` = 48 [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001862s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"dialog\":\"1\",\"row\":{\"activityname\":\"\\u664b\\u6c5f\\u5e02\\u59d4\\u5e72\\u90e8\\u804c\\u5de5\\u5bbf\\u820d\\u5ba4\\u5185\\u88c5\\u9970\\u5de5\\u7a0b\",\"logo\":\"\\/uploads\\/20190916\\/da996b910669ef265f1ba7917cd625ec.jpg\",\"activityimages\":\"\\/uploads\\/20190916\\/cace68afd402b2257d33f6b8f96b83e7.jpg\",\"organizers\":\"\\u6cc9\\u5dde\\u5e02\\u7ee5\\u8bda\\u5de5\\u7a0b\\u7ba1\\u7406\\u6709\\u9650\\u516c\\u53f8\",\"address\":\"\\u664b\\u6c5f\\u5e02\",\"block\":\"1\",\"public_name\":\"\\u6cc9\\u5dde\\u5e02\\u7ee5\\u8bda\\u5de5\\u7a0b\\u7ba1\\u7406\\u6709\\u9650\\u516c\\u53f8\",\"public_desc\":\"\\u6cc9\\u5dde\\u5e02\\u7ee5\\u8bda\\u5de5\\u7a0b\\u7ba1\\u7406\\u6709\\u9650\\u516c\\u53f8\",\"public_logo\":\"\\/uploads\\/20190916\\/da996b910669ef265f1ba7917cd625ec.jpg\",\"rqcode\":\"\\/uploads\\/20190916\\/406051ee3b7bb7deca6d2cb706cfc5c5.jpg\",\"views\":\"200\",\"navigation_x\":\"118.558433\",\"navigation_y\":\"24.787825\",\"signuptime\":\"2019-09-16 16:57:50\",\"signupendtime\":\"2019-09-18 16:57:50\",\"audittime\":\"2019-09-18 16:57:50\",\"auditendtime\":\"2019-09-18 16:57:50\",\"statrtime\":\"2019-09-18 16:57:50\",\"endtime\":\"2019-09-18 16:57:50\",\"signupnum\":\"10\",\"notcharge\":\"0\",\"charge\":\"\",\"notaudit\":\"0\",\"signupmust\":\"\",\"audit_id\":[\"\"]}}' , '/index.php/admin/activity/add?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.7.0.18838' , '120.42.185.40' , 1568625167) [ RunTime:0.002805s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:12:47+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568624266987
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001586s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001420s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001691s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwojtVXpL2RklhIMcFKB0X3Y'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwp-x1qHs6z2uqhneLnDmX4E'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:12:57+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/paper/index/a/1/ids/48?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000893s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001622s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001471s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001146s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'paper' LIMIT 1 [ RunTime:0.000732s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:12:58+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/paper/index?dialog=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568625182766
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000865s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001590s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001125s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.002960s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_paper` WHERE (  `activity_id` = 48 ) AND `hx_paper`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE (  `activity_id` = 48 ) AND `hx_paper`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000468s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:13:00+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/paper/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000834s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001684s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001548s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001242s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:13:27+08:00 ] 120.42.185.40 POST hx.le-cx.com/index.php/admin/paper/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000821s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001602s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001388s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001663s ]
+[ sql ] [ SQL ] INSERT INTO `hx_paper` (`papername` , `note` , `charge` , `chargenum` , `activity_id` , `createtime` , `updatetime`) VALUES ('免费票' , '10' , '0' , 0 , 48 , 1568625207 , 1568625207) [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001713s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"dialog\":\"1\",\"row\":{\"papername\":\"\\u514d\\u8d39\\u7968\",\"note\":\"10\",\"charge\":\"0\",\"chargenum\":\"0\"}}' , '/index.php/admin/paper/add?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.7.0.18838' , '120.42.185.40' , 1568625207) [ RunTime:0.002589s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:13:27+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/paper/index?dialog=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1568625182767
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000906s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001858s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001545s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001705s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_paper` WHERE (  `activity_id` = 48 ) AND `hx_paper`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE (  `activity_id` = 48 ) AND `hx_paper`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001674s ]
+[ sql ] [ SQL ] SELECT `activityname` FROM `hx_activity` WHERE  `id` = 48  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:13:31+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/activity/form/ids/48?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000764s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001580s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001341s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001642s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001425s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE (  `id` = 48 ) AND `hx_activity`.`deletetime` IS NULL LIMIT 1 [ RunTime:0.000568s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:15:29+08:00 ] 120.42.185.40 POST hx.le-cx.com/index.php/admin/activity/form/ids/48?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000898s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001637s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001473s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001601s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001480s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE (  `id` = 48 ) AND `hx_activity`.`deletetime` IS NULL LIMIT 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] UPDATE `hx_activity`  SET `custom`='[{\"title\":\"\\u6295\\u6807\\u4eba\",\"futitle\":\"\\u59d3\\u540d\",\"type\":\"0\"},{\"title\":\"\\u8054\\u7cfb\\u4eba\",\"futitle\":\"\\u59d3\\u540d\",\"type\":\"0\"},{\"title\":\"\\u8054\\u7cfb\\u7535\\u8bdd\",\"futitle\":\"\\u7535\\u8bdd\\u53f7\\u7801\",\"type\":\"0\"}]',`updatetime`=1568625329  WHERE  `id` = 48 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001783s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"dialog\":\"1\",\"row\":{\"activityname\":\"\\u664b\\u6c5f\\u5e02\\u59d4\\u5e72\\u90e8\\u804c\\u5de5\\u5bbf\\u820d\\u5ba4\\u5185\\u88c5\\u9970\\u5de5\\u7a0b\",\"title\":[\"\\u6295\\u6807\\u4eba\",\"\\u8054\\u7cfb\\u4eba\",\"\\u8054\\u7cfb\\u7535\\u8bdd\"],\"futitle\":[\"\\u59d3\\u540d\",\"\\u59d3\\u540d\",\"\\u7535\\u8bdd\\u53f7\\u7801\"],\"type\":[\"0\",\"0\",\"0\"]},\"ids\":\"48\"}' , '/index.php/admin/activity/form/ids/48?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.7.0.18838' , '120.42.185.40' , 1568625329) [ RunTime:0.002901s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:15:34+08:00 ] 120.42.185.40 GET hx.le-cx.com/index.php/admin/signlist/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%22status%22%3A%220%22%7D&op=%7B%22status%22%3A%22%3D%22%7D&_=1568624212527
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000770s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001658s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001366s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001710s ]
+[ sql ] [ SQL ] SELECT `id`,`activityname` FROM `hx_activity` WHERE  `deletetime` IS NULL [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `deletetime` IS NULL [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_vip` WHERE  `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001381s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_signlist` WHERE (  `activity_id` = 48  AND (  `status` = '0' ) ) AND `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE (  `activity_id` = 48  AND (  `status` = '0' ) ) AND `hx_signlist`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000657s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:36:04+08:00 ] 140.243.187.198 GET hx.le-cx.com/api/Getwxuser/get_user_all?code=001pNiy61li9hM1nl0C619pay61pNiyN
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003785s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001751s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:36:04+08:00 ] 140.243.187.198 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=45&user_id=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001402s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.002013s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001732s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001326s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE  `id` = 43  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:36:05+08:00 ] 140.243.187.198 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=45&openid=ovvUKwtgdbKtSu7xZBP3MpAEHUpg
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000905s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.002275s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001755s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 45  AND `deletetime` IS NULL [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.002014s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001400s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000497s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:36:14+08:00 ] 140.243.187.198 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=45&user_id=16
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001949s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001285s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE  `id` = 43  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2019-09-16T17:36:14+08:00 ] 140.243.187.198 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=45&openid=ovvUKwtgdbKtSu7xZBP3MpAEHUpg
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000851s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.002100s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 45  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001384s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 45  AND `deletetime` IS NULL [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001273s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 45  AND `vip_id` = 16  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000452s ]

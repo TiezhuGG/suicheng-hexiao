@@ -1,0 +1,1513 @@
+---------------------------------------------------------------
+[ 2020-02-25T08:48:04+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/Getwxuser/get_user_all?code=0111hOaJ1Tvdd00HrGdJ1PY4bJ11hOaI
+[运行时间：0.701546s] [吞吐率：1.43req/s] [内存消耗：5,511.53kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000047s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005282s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000100s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000146s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Getwxuser',
+    2 => 'get_user_all',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/?activity_id=51&code=0111hOaJ1Tvdd00HrGdJ1PY4bJ11hOaI&state=STATE',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0111hOaJ1Tvdd00HrGdJ1PY4bJ11hOaI',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002969s ]
+[ info ] [ RUN ] app\api\controller\Getwxuser->get_user_all[ /www/hexiao/application/api/controller/Getwxuser.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000142s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.005274s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwhuexi6TTgKQrhCr7PA1wmo'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000543s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:04+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=51&user_id=10
+[运行时间：0.109322s] [吞吐率：9.15req/s] [内存消耗：5,620.07kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002698s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000072s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000109s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'sign',
+    2 => 'getsigninfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/?activity_id=51&code=0111hOaJ1Tvdd00HrGdJ1PY4bJ11hOaI&state=STATE',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '51',
+  'user_id' => '10',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001708s ]
+[ info ] [ RUN ] app\api\controller\Sign->getsigninfo[ /www/hexiao/application/api/controller/Sign.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000133s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.003853s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 51  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.017967s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.002473s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 51  AND `vip_id` = 10  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.004591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.003067s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE  `id` = 49  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:05+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=51&openid=ovvUKwhuexi6TTgKQrhCr7PA1wmo
+[运行时间：0.104308s] [吞吐率：9.59req/s] [内存消耗：6,121.93kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002552s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000073s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000108s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'activity',
+    2 => 'getactivityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/?activity_id=51&code=0111hOaJ1Tvdd00HrGdJ1PY4bJ11hOaI&state=STATE',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '51',
+  'openid' => 'ovvUKwhuexi6TTgKQrhCr7PA1wmo',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001702s ]
+[ info ] [ RUN ] app\api\controller\Activity->getactivityinfo[ /www/hexiao/application/api/controller/Activity.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000181s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000490s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001890s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 51  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001237s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 51  AND `deletetime` IS NULL [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001180s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwhuexi6TTgKQrhCr7PA1wmo'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001278s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 51  AND `vip_id` = 10  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000415s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:11+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=51&user_id=10
+[运行时间：0.050938s] [吞吐率：19.63req/s] [内存消耗：5,619.83kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002613s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000078s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'sign',
+    2 => 'getsigninfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/qrcode.html?activity_id=51&user_id=10&openid=ovvUKwhuexi6TTgKQrhCr7PA1wmo',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '51',
+  'user_id' => '10',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001910s ]
+[ info ] [ RUN ] app\api\controller\Sign->getsigninfo[ /www/hexiao/application/api/controller/Sign.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000116s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000513s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001878s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 51  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001307s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 51  AND `vip_id` = 10  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_paper` WHERE  `id` = 49  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:11+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=51&openid=ovvUKwhuexi6TTgKQrhCr7PA1wmo
+[运行时间：0.055017s] [吞吐率：18.18req/s] [内存消耗：6,121.65kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002543s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000074s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000109s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'activity',
+    2 => 'getactivityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/qrcode.html?activity_id=51&user_id=10&openid=ovvUKwhuexi6TTgKQrhCr7PA1wmo',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '51',
+  'openid' => 'ovvUKwhuexi6TTgKQrhCr7PA1wmo',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001649s ]
+[ info ] [ RUN ] app\api\controller\Activity->getactivityinfo[ /www/hexiao/application/api/controller/Activity.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000133s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000484s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001792s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 51  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001257s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 51  AND `deletetime` IS NULL [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001190s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwhuexi6TTgKQrhCr7PA1wmo'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001265s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 51  AND `vip_id` = 10  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:34+08:00 ] 183.250.77.240 GET hx.le-cx.com/
+[运行时间：0.045165s] [吞吐率：22.14req/s] [内存消耗：4,909.52kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002542s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000075s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000119s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001683s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000475s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/hexiao/application/index/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000113s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-02-25T08:48:34+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/index/login
+[运行时间：0.052490s] [吞吐率：19.05req/s] [内存消耗：5,452.79kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002792s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000075s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000112s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001713s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000259s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/hexiao/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/hexiao/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000525s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000114s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-02-25T08:48:35+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/ajax/lang?callback=define&controllername=index&v=1582591714
+[运行时间：0.068301s] [吞吐率：14.64req/s] [内存消耗：5,474.46kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002497s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000069s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000105s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/index/login',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1582591714',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001727s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000253s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000133s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000328s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-02-25T08:48:41+08:00 ] 183.250.77.240 POST hx.le-cx.com/index.php/admin/index/login
+[运行时间：0.078905s] [吞吐率：12.67req/s] [内存消耗：6,839.66kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002566s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000069s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000113s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://hx.le-cx.com',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/index/login',
+  'content-length' => '75',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => '63103ae572653e4a9176cb0a8a3cd347',
+  'username' => 'admin',
+  'password' => 'admin123',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001702s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000228s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/hexiao/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.007287s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000118s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.002724s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001521s ]
+[ sql ] [ SQL ] UPDATE `hx_admin`  SET `loginfailure`=1,`updatetime`=1582591721  WHERE  `id` = 1 [ RunTime:0.003376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.002373s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"63103ae572653e4a9176cb0a8a3cd347\",\"username\":\"admin\"}' , '/index.php/admin/index/login' , 0 , 'Unknown' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15' , '183.250.77.240' , 1582591721) [ RunTime:0.003964s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:45+08:00 ] 183.250.77.240 POST hx.le-cx.com/index.php/admin/index/login
+[运行时间：0.063799s] [吞吐率：15.67req/s] [内存消耗：6,839.68kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002600s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000074s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000111s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://hx.le-cx.com',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/index/login',
+  'content-length' => '78',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => '9346e2a9b9d406c0ee526dcb858b86a4',
+  'username' => 'admin',
+  'password' => 'admin123456',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001817s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000264s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/hexiao/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.005197s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000117s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000497s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001647s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] UPDATE `hx_admin`  SET `loginfailure`=2,`updatetime`=1582591725  WHERE  `id` = 1 [ RunTime:0.003086s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001373s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"9346e2a9b9d406c0ee526dcb858b86a4\",\"username\":\"admin\"}' , '/index.php/admin/index/login' , 0 , 'Unknown' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15' , '183.250.77.240' , 1582591725) [ RunTime:0.002957s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:52+08:00 ] 183.250.77.240 POST hx.le-cx.com/index.php/admin/index/login
+[运行时间：0.067089s] [吞吐率：14.91req/s] [内存消耗：6,876.61kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002720s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000073s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000110s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://hx.le-cx.com',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/index/login',
+  'content-length' => '73',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => '0fc6584b6e313f4c677a43555a306cfa',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002617s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000227s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/hexiao/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.006364s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000115s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000586s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001665s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] UPDATE `hx_admin`  SET `loginfailure`=0,`logintime`=1582591732,`token`='330befad-88ab-42e8-ae19-77a9b0e3d494',`updatetime`=1582591732  WHERE  `id` = 1 [ RunTime:0.003219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001368s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"0fc6584b6e313f4c677a43555a306cfa\",\"username\":\"admin\"}' , '/index.php/admin/index/login' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15' , '183.250.77.240' , 1582591732) [ RunTime:0.003995s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:54+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/index/index
+[运行时间：0.925266s] [吞吐率：1.08req/s] [内存消耗：7,477.70kb] [文件加载：152]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002664s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000087s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000135s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/index/login',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001743s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000229s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ /www/hexiao/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/hexiao/public/../application/admin/view/index/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000157s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000211s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000516s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.002415s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.004030s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.002321s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001762s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.001430s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:54+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/ajax/lang?callback=define&controllername=index&v=1582591733
+[运行时间：0.044983s] [吞吐率：22.23req/s] [内存消耗：5,476.70kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002492s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000100s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000188s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1582591733',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001882s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000284s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000158s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000376s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-02-25T08:48:56+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/general/config?addtabs=1
+[运行时间：0.094674s] [吞吐率：10.56req/s] [内存消耗：7,205.18kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002729s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000086s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000127s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general.config',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/general/config?ref=addtabs',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001839s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000264s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/general/config.php
+[ info ] [ RUN ] app\admin\controller\general\Config->index[ /www/hexiao/application/admin/controller/general/Config.php ]
+[ info ] [ VIEW ] /www/hexiao/public/../application/admin/view/general/config/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'siteList',
+  6 => 'typeList',
+  7 => 'groupList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000139s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000236s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000508s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001583s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001489s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_config` [ RunTime:0.002797s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_config` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.001220s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:56+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/ajax/lang?callback=define&controllername=general.config&v=1582591735
+[运行时间：0.045604s] [吞吐率：21.93req/s] [内存消耗：5,474.57kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002723s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000073s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000108s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/general/config?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'general.config',
+  'v' => '1582591735',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001978s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000257s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/general/config.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000136s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000278s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-02-25T08:48:57+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/order?addtabs=1
+[运行时间：0.063853s] [吞吐率：15.66req/s] [内存消耗：7,066.40kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002539s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000075s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000113s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/order?ref=addtabs',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001654s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000348s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/order.php
+[ info ] [ RUN ] app\admin\controller\Order->index[ /www/hexiao/application/admin/controller/Order.php ]
+[ info ] [ VIEW ] /www/hexiao/public/../application/admin/view/order/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000184s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000133s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000707s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001525s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001443s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001285s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'order' LIMIT 1 [ RunTime:0.000760s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:48:57+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/ajax/lang?callback=define&controllername=order&v=1582591737
+[运行时间：0.043426s] [吞吐率：23.03req/s] [内存消耗：5,468.80kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002505s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000086s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000123s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/order?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'order',
+  'v' => '1582591737',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001755s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000223s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/order.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000126s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000264s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-02-25T08:48:59+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/activity?addtabs=1
+[运行时间：0.067441s] [吞吐率：14.83req/s] [内存消耗：7,223.29kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002679s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000082s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000119s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'activity',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/activity?ref=addtabs',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002108s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000286s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/activity.php
+[ info ] [ RUN ] app\admin\controller\Activity->index[ /www/hexiao/application/admin/controller/Activity.php ]
+[ info ] [ VIEW ] /www/hexiao/public/../application/admin/view/activity/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'notchargeList',
+  6 => 'notauditList',
+  7 => 'hxlist',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000135s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000164s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000512s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001551s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001609s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'activity' LIMIT 1 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:49:00+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/ajax/lang?callback=define&controllername=activity&v=1582591739
+[运行时间：0.045036s] [吞吐率：22.20req/s] [内存消耗：5,472.95kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002535s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000077s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000118s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/activity?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'activity',
+  'v' => '1582591739',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001704s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000241s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/hexiao/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/activity.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000128s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000295s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-02-25T08:49:00+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/order/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1582591737751
+[运行时间：0.079482s] [吞吐率：12.58req/s] [内存消耗：7,245.41kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.003293s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000111s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000303s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/order?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1582591737751',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001870s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000262s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/order.php
+[ info ] [ RUN ] app\admin\controller\Order->index[ /www/hexiao/application/admin/controller/Order.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000165s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000163s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001767s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001454s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_order` [ RunTime:0.002486s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_order` WHERE `hx_order`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001814s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_order` WHERE `hx_order`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001351s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 35 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 26 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:49:02+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/activity/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1582591739778
+[运行时间：0.076806s] [吞吐率：13.02req/s] [内存消耗：7,419.08kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002587s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000076s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000112s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'activity',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/activity?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1582591739778',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001710s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000239s ]
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn/activity.php
+[ info ] [ RUN ] app\admin\controller\Activity->index[ /www/hexiao/application/admin/controller/Activity.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000139s ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000368s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000481s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001747s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001411s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001797s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `status` = '1'  AND `auditman` = '1'  AND `deletetime` IS NULL [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001482s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001215s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE `hx_activity`.`deletetime` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = ''  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwtgdbKtSu7xZBP3MpAEHUpg'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `name` FROM `hx_vip` WHERE  `openid` = 'ovvUKwq8WEI9K8yQHHeW8XFtCpA0'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:49:02+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/2
+[运行时间：0.076526s] [吞吐率：13.07req/s] [内存消耗：3,823.50kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004832s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000073s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000111s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => '2',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/activity?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000129s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-02-25T08:49:02+08:00 ] 183.250.77.240 GET hx.le-cx.com/index.php/admin/1
+[运行时间：0.077026s] [吞吐率：12.98req/s] [内存消耗：3,823.50kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002494s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000071s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => '1',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=6h0jssoaof6ktrbfspdmmg08e4; Hm_lvt_1a64511a22d118c1399c7e2fa4a617cf=1564108556; Hm_lvt_fe7d2f3f16c02e12fdf65cf241cc7e58=1564108555; __cfduid=db05e80946c9b3825864e1a23b78cc7fd1562226356',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/index.php/admin/activity?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000105s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-02-25T08:49:40+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/Getwxuser/get_user_all?code=061IPSRG1sydj20uqBPG1EOdSG1IPSRv
+[运行时间：0.505130s] [吞吐率：1.98req/s] [内存消耗：5,511.54kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002477s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000071s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000111s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Getwxuser',
+    2 => 'get_user_all',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/?activity_id=57&code=061IPSRG1sydj20uqBPG1EOdSG1IPSRv&state=STATE',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'code' => '061IPSRG1sydj20uqBPG1EOdSG1IPSRv',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001660s ]
+[ info ] [ RUN ] app\api\controller\Getwxuser->get_user_all[ /www/hexiao/application/api/controller/Getwxuser.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000136s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001648s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwhuexi6TTgKQrhCr7PA1wmo'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000615s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:49:40+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=57&user_id=10
+[运行时间：0.048180s] [吞吐率：20.76req/s] [内存消耗：5,611.47kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002821s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000077s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'sign',
+    2 => 'getsigninfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/?activity_id=57&code=061IPSRG1sydj20uqBPG1EOdSG1IPSRv&state=STATE',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '57',
+  'user_id' => '10',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001681s ]
+[ info ] [ RUN ] app\api\controller\Sign->getsigninfo[ /www/hexiao/application/api/controller/Sign.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000162s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001783s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 57  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001315s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 57  AND `vip_id` = 10  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000598s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:49:41+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=57&openid=ovvUKwhuexi6TTgKQrhCr7PA1wmo
+[运行时间：0.057791s] [吞吐率：17.30req/s] [内存消耗：6,117.65kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002480s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000081s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000117s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'activity',
+    2 => 'getactivityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/?activity_id=57&code=061IPSRG1sydj20uqBPG1EOdSG1IPSRv&state=STATE',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '57',
+  'openid' => 'ovvUKwhuexi6TTgKQrhCr7PA1wmo',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001675s ]
+[ info ] [ RUN ] app\api\controller\Activity->getactivityinfo[ /www/hexiao/application/api/controller/Activity.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000132s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001814s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 57  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 57  AND `deletetime` IS NULL [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwhuexi6TTgKQrhCr7PA1wmo'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001463s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 57  AND `vip_id` = 10  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000721s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:53:59+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/Getwxuser/get_user_all?code=071Dgw6g1HbNdu0rQS3g1qGs6g1Dgw6P
+[运行时间：0.509248s] [吞吐率：1.96req/s] [内存消耗：5,511.54kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002798s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000075s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000111s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Getwxuser',
+    2 => 'get_user_all',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/?activity_id=57&code=071Dgw6g1HbNdu0rQS3g1qGs6g1Dgw6P&state=STATE',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'code' => '071Dgw6g1HbNdu0rQS3g1qGs6g1Dgw6P',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001812s ]
+[ info ] [ RUN ] app\api\controller\Getwxuser->get_user_all[ /www/hexiao/application/api/controller/Getwxuser.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000127s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001645s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwhuexi6TTgKQrhCr7PA1wmo'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:53:59+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/sign/getsigninfo?activity_id=57&user_id=10
+[运行时间：0.047930s] [吞吐率：20.86req/s] [内存消耗：5,611.47kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002549s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000075s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000112s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'sign',
+    2 => 'getsigninfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/?activity_id=57&code=071Dgw6g1HbNdu0rQS3g1qGs6g1Dgw6P&state=STATE',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '57',
+  'user_id' => '10',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001668s ]
+[ info ] [ RUN ] app\api\controller\Sign->getsigninfo[ /www/hexiao/application/api/controller/Sign.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000116s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000514s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001804s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 57  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 57  AND `vip_id` = 10  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000608s ]
+---------------------------------------------------------------
+[ 2020-02-25T08:54:00+08:00 ] 183.250.77.240 GET hx.le-cx.com/api/activity/getactivityinfo?activity_id=57&openid=ovvUKwhuexi6TTgKQrhCr7PA1wmo
+[运行时间：0.056639s] [吞吐率：17.66req/s] [内存消耗：6,117.65kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002729s ]
+[ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000071s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000107s ]
+[ info ] [ LANG ] /www/hexiao/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'activity',
+    2 => 'getactivityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'hx.le-cx.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.10(0x17000a21) NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://hx.le-cx.com/vote/?activity_id=57&code=071Dgw6g1HbNdu0rQS3g1qGs6g1Dgw6P&state=STATE',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '57',
+  'openid' => 'ovvUKwhuexi6TTgKQrhCr7PA1wmo',
+)
+[ info ] [ LANG ] /www/hexiao/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001695s ]
+[ info ] [ RUN ] app\api\controller\Activity->getactivityinfo[ /www/hexiao/application/api/controller/Activity.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000128s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000478s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_activity` [ RunTime:0.001803s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_activity` WHERE  `id` = 57  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_paper` [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT `id`,`papername`,`charge`,`chargenum`,`note` FROM `hx_paper` WHERE  `activity_id` = 57  AND `deletetime` IS NULL [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_vip` [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_vip` WHERE  `openid` = 'ovvUKwhuexi6TTgKQrhCr7PA1wmo'  AND `deletetime` IS NULL LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_signlist` [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_signlist` WHERE  `activity_id` = 57  AND `vip_id` = 10  AND `deletetime` IS NULL ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000590s ]

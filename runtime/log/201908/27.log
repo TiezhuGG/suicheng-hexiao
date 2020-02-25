@@ -1,0 +1,430 @@
+---------------------------------------------------------------
+[ 2019-08-27T08:49:09+08:00 ] 0.0.0.0 POST hexiao.com/public/admin/index/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002739s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.003055s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001485s ]
+[ sql ] [ SQL ] UPDATE `hx_admin`  SET `logintime`=1566866949,`token`='51d55985-6b46-460e-b6ee-be4c92952876',`updatetime`=1566866949  WHERE  `id` = 1 [ RunTime:0.002562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001483s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"629ccf5bbdbe60f1faf5fd9d67acbdb3\",\"username\":\"admin\"}' , '/public/admin/index/login.html' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36' , '0.0.0.0' , 1566866949) [ RunTime:0.001371s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:09+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001785s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001314s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.002174s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.001013s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:10+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001401s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001410s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001308s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.002871s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.001957s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:11+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566866950550
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001533s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001315s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.012703s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000714s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:17+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/addon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001680s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001207s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001389s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000849s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:26+08:00 ] 0.0.0.0 POST hexiao.com/public/admin/addon/install
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001662s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001195s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001329s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001442s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms' , 'CMS管理' , 1 , 'fa fa-list' , 0 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.001557s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives' , '内容管理' , 'fa fa-file-text-o' , 1 , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000945s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/index' , '查看' , 0 , 'fa fa-circle-o' , 89 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000899s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `remark` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/content' , '副表管理' , '用于管理模型副表的数据列表,不建议在此进行删除操作' , 0 , 'fa fa-circle-o' , 89 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000892s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/add' , '添加' , 0 , 'fa fa-circle-o' , 89 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000922s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/edit' , '修改' , 0 , 'fa fa-circle-o' , 89 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000946s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/del' , '删除' , 0 , 'fa fa-circle-o' , 89 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000885s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 89 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000892s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `remark` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel' , '栏目管理' , 'fa fa-list' , '用于管理网站的分类，可进行无限级分类，注意只有类型为列表的才可以添加文章' , 1 , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000817s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/index' , '查看' , 0 , 'fa fa-circle-o' , 96 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000819s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/add' , '添加' , 0 , 'fa fa-circle-o' , 96 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000895s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/edit' , '修改' , 0 , 'fa fa-circle-o' , 96 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.001736s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/del' , '删除' , 0 , 'fa fa-circle-o' , 96 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000966s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 96 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000881s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `remark` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/admin' , '栏目授权' , '分配管理员可管理的栏目数据，此功能需要先开启插件管理CMS配置的栏目授权开关' , 0 , 'fa fa-circle-o' , 96 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000829s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `remark` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx' , '模型管理' , 'fa fa-th' , '在线添加修改删除模型，管理模型字段和相关模型数据' , 1 , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000888s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/index' , '查看' , 0 , 'fa fa-circle-o' , 103 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000819s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/add' , '添加' , 0 , 'fa fa-circle-o' , 103 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000804s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/edit' , '修改' , 0 , 'fa fa-circle-o' , 103 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000877s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/del' , '删除' , 0 , 'fa fa-circle-o' , 103 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.001225s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 103 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000957s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `ismenu` , `remark` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields' , '字段管理' , 'fa fa-fields' , 0 , '用于管理模型或表单的字段，进行相关的增删改操作，灰色为主表字段无法修改' , 103 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000832s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/index' , '查看' , 0 , 'fa fa-circle-o' , 109 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000928s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/add' , '添加' , 0 , 'fa fa-circle-o' , 109 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000978s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/edit' , '修改' , 0 , 'fa fa-circle-o' , 109 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000890s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/del' , '删除' , 0 , 'fa fa-circle-o' , 109 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000862s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/duplicate' , '复制' , 0 , 'fa fa-circle-o' , 109 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000971s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 109 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000901s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `remark` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags' , '标签管理' , 'fa fa-tags' , '用于管理文章关联的标签,标签的添加在添加文章时自动维护,无需手动添加标签' , 1 , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000899s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/index' , '查看' , 0 , 'fa fa-circle-o' , 116 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000787s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/add' , '添加' , 0 , 'fa fa-circle-o' , 116 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000807s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/edit' , '修改' , 0 , 'fa fa-circle-o' , 116 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000898s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/del' , '删除' , 0 , 'fa fa-circle-o' , 116 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000912s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 116 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000819s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `remark` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block' , '区块管理' , 'fa fa-th-large' , '用于管理站点的自定义区块内容,常用于广告、JS脚本、焦点图、片段代码等' , 1 , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000886s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/index' , '查看' , 0 , 'fa fa-circle-o' , 122 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000883s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/add' , '添加' , 0 , 'fa fa-circle-o' , 122 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000882s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/edit' , '修改' , 0 , 'fa fa-circle-o' , 122 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000888s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/del' , '删除' , 0 , 'fa fa-circle-o' , 122 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000862s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 122 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000940s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `remark` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page' , '单页管理' , 'fa fa-file' , '用于管理网站的单页面，可任意创建修改删除单页面' , 1 , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000948s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/index' , '查看' , 0 , 'fa fa-circle-o' , 128 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000903s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/add' , '添加' , 0 , 'fa fa-circle-o' , 128 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000784s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/edit' , '修改' , 0 , 'fa fa-circle-o' , 128 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000807s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/del' , '删除' , 0 , 'fa fa-circle-o' , 128 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000908s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 128 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000780s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `remark` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment' , '评论管理' , 'fa fa-comment' , '用于管理用户在网站上发表的评论，可任意修改或隐藏评论' , 1 , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.001144s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/index' , '查看' , 0 , 'fa fa-circle-o' , 134 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000964s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/add' , '添加' , 0 , 'fa fa-circle-o' , 134 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000867s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/edit' , '修改' , 0 , 'fa fa-circle-o' , 134 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000953s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/del' , '删除' , 0 , 'fa fa-circle-o' , 134 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000832s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 134 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000817s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `remark` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diyform' , '自定义表单管理' , 'fa fa-list' , '可在线创建自定义表单，管理表单字段和数据列表' , 1 , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000806s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diyform/index' , '查看' , 0 , 'fa fa-circle-o' , 140 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000935s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diyform/add' , '添加' , 0 , 'fa fa-circle-o' , 140 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000828s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diyform/edit' , '修改' , 0 , 'fa fa-circle-o' , 140 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000814s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diyform/del' , '删除' , 0 , 'fa fa-circle-o' , 140 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000838s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diyform/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 140 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000832s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `ismenu` , `remark` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diydata' , '自定义表单数据管理' , 'fa fa-list' , 0 , '可在线管理自定义表单的数据列表' , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000841s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diydata/index' , '查看' , 0 , 'fa fa-circle-o' , 146 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000801s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diydata/add' , '添加' , 0 , 'fa fa-circle-o' , 146 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000791s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diydata/edit' , '修改' , 0 , 'fa fa-circle-o' , 146 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000999s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diydata/del' , '删除' , 0 , 'fa fa-circle-o' , 146 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000801s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diydata/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 146 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000820s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/diydata/import' , '导入' , 0 , 'fa fa-circle-o' , 146 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000848s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `ismenu` , `remark` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/order' , '订单管理' , 'fa fa-cny' , 1 , '可在线管理付费查看所产生的订单' , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000889s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/order/index' , '查看' , 0 , 'fa fa-circle-o' , 153 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000830s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/order/add' , '添加' , 0 , 'fa fa-circle-o' , 153 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000904s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/order/edit' , '修改' , 0 , 'fa fa-circle-o' , 153 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.001021s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/order/del' , '删除' , 0 , 'fa fa-circle-o' , 153 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000835s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/order/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 153 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000840s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `icon` , `ismenu` , `remark` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/special' , '专题管理' , 'fa fa-newspaper-o' , 1 , '可在线管理专题列表' , 88 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000819s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/special/index' , '查看' , 0 , 'fa fa-circle-o' , 159 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.001358s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/special/add' , '添加' , 0 , 'fa fa-circle-o' , 159 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.001283s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/special/edit' , '修改' , 0 , 'fa fa-circle-o' , 159 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000952s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/special/del' , '删除' , 0 , 'fa fa-circle-o' , 159 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000983s ]
+[ sql ] [ SQL ] INSERT INTO `hx_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/special/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 159 , 'normal' , 1566866965 , 1566866965) [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001414s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('插件管理 安装' , '{\"name\":\"cms\",\"force\":\"0\",\"uid\":\"6525\",\"token\":\"9d20b1bd-47d6-4b42-a29f-59c9cda18a09\",\"version\":\"1.1.11\",\"faversion\":\"1.0.0.20190705_beta\"}' , '/public/admin/addon/install' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36' , '0.0.0.0' , 1566866965) [ RunTime:0.000764s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:26+08:00 ] 0.0.0.0 POST hexiao.com/public/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002483s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001240s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003667s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.001432s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin_log` [ RunTime:0.001109s ]
+[ sql ] [ SQL ] INSERT INTO `hx_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/public/admin/index/index' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36' , '0.0.0.0' , 1566866966) [ RunTime:0.014853s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:31+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/addon/config?name=cms&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002162s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001590s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001696s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003128s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:47+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/archives?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002468s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001965s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002766s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001940s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_channel` [ RunTime:0.002107s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_channel` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.001126s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_cms_channel` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `hx_cms_channel` WHERE  `id` IN ('') [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_model` [ RunTime:0.002244s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_model` [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'cms/archives' LIMIT 1 [ RunTime:0.000828s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:48+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566866988090
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002218s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001846s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002914s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.005120s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_channel` [ RunTime:0.001873s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_channel` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.003247s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_cms_channel` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `hx_cms_channel` WHERE  `id` IN ('') [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_archives` [ RunTime:0.002052s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_archives` `archives` LEFT JOIN `hx_cms_channel` `channel` ON `archives`.`channel_id`=`channel`.`id` WHERE `archives`.`deletetime` IS NULL ORDER BY `archives`.`weigh` DESC,`archives`.`id` DESC LIMIT 1 [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT `archives`.`id`,`archives`.`user_id`,`archives`.`channel_id`,`archives`.`model_id`,`archives`.`special_id`,`archives`.`title`,`archives`.`style`,`archives`.`flag`,`archives`.`image`,`archives`.`keywords`,`archives`.`description`,`archives`.`tags`,`archives`.`weigh`,`archives`.`views`,`archives`.`comments`,`archives`.`likes`,`archives`.`dislikes`,`archives`.`diyname`,`archives`.`createtime`,`archives`.`updatetime`,`archives`.`publishtime`,`archives`.`deletetime`,`archives`.`memo`,`archives`.`status`,channel.id AS channel__id,channel.type AS channel__type,channel.model_id AS channel__model_id,channel.parent_id AS channel__parent_id,channel.name AS channel__name,channel.image AS channel__image,channel.flag AS channel__flag,channel.keywords AS channel__keywords,channel.description AS channel__description,channel.diyname AS channel__diyname,channel.outlink AS channel__outlink,channel.items AS channel__items,channel.weigh AS channel__weigh,channel.channeltpl AS channel__channeltpl,channel.listtpl AS channel__listtpl,channel.showtpl AS channel__showtpl,channel.pagesize AS channel__pagesize,channel.iscontribute AS channel__iscontribute,channel.isnav AS channel__isnav,channel.createtime AS channel__createtime,channel.updatetime AS channel__updatetime,channel.status AS channel__status FROM `hx_cms_archives` `archives` LEFT JOIN `hx_cms_channel` `channel` ON `archives`.`channel_id`=`channel`.`id` WHERE `archives`.`deletetime` IS NULL ORDER BY `archives`.`weigh` DESC,`archives`.`id` DESC LIMIT 0,10 [ RunTime:0.002724s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:55+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566866988091
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001323s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_channel` [ RunTime:0.001721s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_channel` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.001048s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_cms_channel` [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `hx_cms_channel` WHERE  `id` IN ('') [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_archives` [ RunTime:0.001458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_archives` `archives` LEFT JOIN `hx_cms_channel` `channel` ON `archives`.`channel_id`=`channel`.`id` WHERE `archives`.`deletetime` IS NULL ORDER BY `archives`.`weigh` DESC,`archives`.`id` DESC LIMIT 1 [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT `archives`.`id`,`archives`.`user_id`,`archives`.`channel_id`,`archives`.`model_id`,`archives`.`special_id`,`archives`.`title`,`archives`.`style`,`archives`.`flag`,`archives`.`image`,`archives`.`keywords`,`archives`.`description`,`archives`.`tags`,`archives`.`weigh`,`archives`.`views`,`archives`.`comments`,`archives`.`likes`,`archives`.`dislikes`,`archives`.`diyname`,`archives`.`createtime`,`archives`.`updatetime`,`archives`.`publishtime`,`archives`.`deletetime`,`archives`.`memo`,`archives`.`status`,channel.id AS channel__id,channel.type AS channel__type,channel.model_id AS channel__model_id,channel.parent_id AS channel__parent_id,channel.name AS channel__name,channel.image AS channel__image,channel.flag AS channel__flag,channel.keywords AS channel__keywords,channel.description AS channel__description,channel.diyname AS channel__diyname,channel.outlink AS channel__outlink,channel.items AS channel__items,channel.weigh AS channel__weigh,channel.channeltpl AS channel__channeltpl,channel.listtpl AS channel__listtpl,channel.showtpl AS channel__showtpl,channel.pagesize AS channel__pagesize,channel.iscontribute AS channel__iscontribute,channel.isnav AS channel__isnav,channel.createtime AS channel__createtime,channel.updatetime AS channel__updatetime,channel.status AS channel__status FROM `hx_cms_archives` `archives` LEFT JOIN `hx_cms_channel` `channel` ON `archives`.`channel_id`=`channel`.`id` WHERE `archives`.`deletetime` IS NULL ORDER BY `archives`.`weigh` DESC,`archives`.`id` DESC LIMIT 0,10 [ RunTime:0.001429s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:56+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566866988092
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001317s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001151s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001108s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001956s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_channel` [ RunTime:0.001451s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_channel` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_cms_channel` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `hx_cms_channel` WHERE  `id` IN ('') [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_archives` [ RunTime:0.001794s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_archives` `archives` LEFT JOIN `hx_cms_channel` `channel` ON `archives`.`channel_id`=`channel`.`id` WHERE `archives`.`deletetime` IS NULL ORDER BY `archives`.`weigh` DESC,`archives`.`id` DESC LIMIT 1 [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT `archives`.`id`,`archives`.`user_id`,`archives`.`channel_id`,`archives`.`model_id`,`archives`.`special_id`,`archives`.`title`,`archives`.`style`,`archives`.`flag`,`archives`.`image`,`archives`.`keywords`,`archives`.`description`,`archives`.`tags`,`archives`.`weigh`,`archives`.`views`,`archives`.`comments`,`archives`.`likes`,`archives`.`dislikes`,`archives`.`diyname`,`archives`.`createtime`,`archives`.`updatetime`,`archives`.`publishtime`,`archives`.`deletetime`,`archives`.`memo`,`archives`.`status`,channel.id AS channel__id,channel.type AS channel__type,channel.model_id AS channel__model_id,channel.parent_id AS channel__parent_id,channel.name AS channel__name,channel.image AS channel__image,channel.flag AS channel__flag,channel.keywords AS channel__keywords,channel.description AS channel__description,channel.diyname AS channel__diyname,channel.outlink AS channel__outlink,channel.items AS channel__items,channel.weigh AS channel__weigh,channel.channeltpl AS channel__channeltpl,channel.listtpl AS channel__listtpl,channel.showtpl AS channel__showtpl,channel.pagesize AS channel__pagesize,channel.iscontribute AS channel__iscontribute,channel.isnav AS channel__isnav,channel.createtime AS channel__createtime,channel.updatetime AS channel__updatetime,channel.status AS channel__status FROM `hx_cms_archives` `archives` LEFT JOIN `hx_cms_channel` `channel` ON `archives`.`channel_id`=`channel`.`id` WHERE `archives`.`deletetime` IS NULL ORDER BY `archives`.`weigh` DESC,`archives`.`id` DESC LIMIT 0,10 [ RunTime:0.001360s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:57+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/modelx?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001429s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001077s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001874s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'cms/modelx' LIMIT 1 [ RunTime:0.000829s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:57+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/modelx/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566866997656
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001337s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_model` [ RunTime:0.001244s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_model` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_model` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000713s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:59+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/tags?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001380s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001880s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'cms/tags' LIMIT 1 [ RunTime:0.000831s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:49:59+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/tags/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566866999372
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001329s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_tags` [ RunTime:0.001607s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_tags` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_tags` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000561s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:00+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/block?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001377s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_block` [ RunTime:0.001534s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `type` FROM `hx_cms_block` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'cms/block' LIMIT 1 [ RunTime:0.000813s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:00+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/block/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566867000527
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002609s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001650s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_block` [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `type` FROM `hx_cms_block` [ RunTime:0.001253s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_block` ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_block` ORDER BY `weigh` DESC LIMIT 0,10 [ RunTime:0.000856s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:01+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/page?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001721s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001839s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_page` [ RunTime:0.001596s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `type` FROM `hx_cms_page` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'cms/page' LIMIT 1 [ RunTime:0.000884s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:01+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/page/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566867001387
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001753s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001974s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001890s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003864s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_page` [ RunTime:0.001745s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `type` FROM `hx_cms_page` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_page` ORDER BY `weigh` DESC LIMIT 1 [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_page` ORDER BY `weigh` DESC LIMIT 0,10 [ RunTime:0.001035s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:04+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/comment?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001356s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001077s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001949s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'cms/comment' LIMIT 1 [ RunTime:0.000984s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:04+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/comment/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566867004582
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001291s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001892s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_comment` [ RunTime:0.001524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_archives` [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_page` [ RunTime:0.001308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_user` [ RunTime:0.001623s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_comment` `comment` LEFT JOIN `hx_cms_archives` `archives` ON `comment`.`aid`=`archives`.`id` LEFT JOIN `hx_cms_page` `spage` ON `comment`.`aid`=`spage`.`id` LEFT JOIN `hx_user` `user` ON `comment`.`user_id`=`user`.`id` ORDER BY `comment`.`id` DESC LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT `comment`.`id`,`comment`.`user_id`,`comment`.`type`,`comment`.`aid`,`comment`.`pid`,`comment`.`content`,`comment`.`comments`,`comment`.`ip`,`comment`.`useragent`,`comment`.`subscribe`,`comment`.`createtime`,`comment`.`updatetime`,`comment`.`status`,archives.id AS archives__id,archives.user_id AS archives__user_id,archives.channel_id AS archives__channel_id,archives.model_id AS archives__model_id,archives.special_id AS archives__special_id,archives.title AS archives__title,archives.style AS archives__style,archives.flag AS archives__flag,archives.image AS archives__image,archives.keywords AS archives__keywords,archives.description AS archives__description,archives.tags AS archives__tags,archives.weigh AS archives__weigh,archives.views AS archives__views,archives.comments AS archives__comments,archives.likes AS archives__likes,archives.dislikes AS archives__dislikes,archives.diyname AS archives__diyname,archives.createtime AS archives__createtime,archives.updatetime AS archives__updatetime,archives.publishtime AS archives__publishtime,archives.deletetime AS archives__deletetime,archives.memo AS archives__memo,archives.status AS archives__status,spage.id AS spage__id,spage.category_id AS spage__category_id,spage.type AS spage__type,spage.title AS spage__title,spage.keywords AS spage__keywords,spage.description AS spage__description,spage.flag AS spage__flag,spage.image AS spage__image,spage.content AS spage__content,spage.icon AS spage__icon,spage.views AS spage__views,spage.likes AS spage__likes,spage.dislikes AS spage__dislikes,spage.comments AS spage__comments,spage.diyname AS spage__diyname,spage.showtpl AS spage__showtpl,spage.createtime AS spage__createtime,spage.updatetime AS spage__updatetime,spage.weigh AS spage__weigh,spage.status AS spage__status,user.id AS user__id,user.group_id AS user__group_id,user.username AS user__username,user.nickname AS user__nickname,user.password AS user__password,user.salt AS user__salt,user.email AS user__email,user.mobile AS user__mobile,user.avatar AS user__avatar,user.level AS user__level,user.gender AS user__gender,user.birthday AS user__birthday,user.bio AS user__bio,user.money AS user__money,user.score AS user__score,user.successions AS user__successions,user.maxsuccessions AS user__maxsuccessions,user.prevtime AS user__prevtime,user.logintime AS user__logintime,user.loginip AS user__loginip,user.loginfailure AS user__loginfailure,user.joinip AS user__joinip,user.jointime AS user__jointime,user.createtime AS user__createtime,user.updatetime AS user__updatetime,user.token AS user__token,user.status AS user__status,user.verification AS user__verification FROM `hx_cms_comment` `comment` LEFT JOIN `hx_cms_archives` `archives` ON `comment`.`aid`=`archives`.`id` LEFT JOIN `hx_cms_page` `spage` ON `comment`.`aid`=`spage`.`id` LEFT JOIN `hx_user` `user` ON `comment`.`user_id`=`user`.`id` ORDER BY `comment`.`id` DESC LIMIT 0,10 [ RunTime:0.001798s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:05+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/diyform?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001373s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001056s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002028s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'cms/diyform' LIMIT 1 [ RunTime:0.000822s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:06+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/diyform/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566867005778
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002224s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001918s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_diyform` [ RunTime:0.001565s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_diyform` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_diyform` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000852s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:07+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/order?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001296s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001894s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'cms/order' LIMIT 1 [ RunTime:0.001064s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:08+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/order/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566867007721
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001872s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001217s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_order` [ RunTime:0.001963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_user` [ RunTime:0.001725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_archives` [ RunTime:0.001734s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_order` `order` LEFT JOIN `hx_user` `user` ON `order`.`user_id`=`user`.`id` LEFT JOIN `hx_cms_archives` `archives` ON `order`.`archives_id`=`archives`.`id` ORDER BY `order`.`id` DESC LIMIT 1 [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `order`.`id`,`order`.`orderid`,`order`.`user_id`,`order`.`archives_id`,`order`.`title`,`order`.`amount`,`order`.`payamount`,`order`.`paytype`,`order`.`paytime`,`order`.`ip`,`order`.`useragent`,`order`.`memo`,`order`.`createtime`,`order`.`updatetime`,`order`.`status`,user.id AS user__id,user.group_id AS user__group_id,user.username AS user__username,user.nickname AS user__nickname,user.password AS user__password,user.salt AS user__salt,user.email AS user__email,user.mobile AS user__mobile,user.avatar AS user__avatar,user.level AS user__level,user.gender AS user__gender,user.birthday AS user__birthday,user.bio AS user__bio,user.money AS user__money,user.score AS user__score,user.successions AS user__successions,user.maxsuccessions AS user__maxsuccessions,user.prevtime AS user__prevtime,user.logintime AS user__logintime,user.loginip AS user__loginip,user.loginfailure AS user__loginfailure,user.joinip AS user__joinip,user.jointime AS user__jointime,user.createtime AS user__createtime,user.updatetime AS user__updatetime,user.token AS user__token,user.status AS user__status,user.verification AS user__verification,archives.id AS archives__id,archives.user_id AS archives__user_id,archives.channel_id AS archives__channel_id,archives.model_id AS archives__model_id,archives.special_id AS archives__special_id,archives.title AS archives__title,archives.style AS archives__style,archives.flag AS archives__flag,archives.image AS archives__image,archives.keywords AS archives__keywords,archives.description AS archives__description,archives.tags AS archives__tags,archives.weigh AS archives__weigh,archives.views AS archives__views,archives.comments AS archives__comments,archives.likes AS archives__likes,archives.dislikes AS archives__dislikes,archives.diyname AS archives__diyname,archives.createtime AS archives__createtime,archives.updatetime AS archives__updatetime,archives.publishtime AS archives__publishtime,archives.deletetime AS archives__deletetime,archives.memo AS archives__memo,archives.status AS archives__status FROM `hx_cms_order` `order` LEFT JOIN `hx_user` `user` ON `order`.`user_id`=`user`.`id` LEFT JOIN `hx_cms_archives` `archives` ON `order`.`archives_id`=`archives`.`id` ORDER BY `order`.`id` DESC LIMIT 0,10 [ RunTime:0.001627s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:10+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/special?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002536s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001102s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001866s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'cms/special' LIMIT 1 [ RunTime:0.001181s ]
+---------------------------------------------------------------
+[ 2019-08-27T08:50:11+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/cms/special/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566867010934
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001351s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001008s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001913s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000745s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_cms_special` [ RunTime:0.001396s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_cms_special` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_cms_special` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000850s ]
+---------------------------------------------------------------
+[ 2019-08-27T09:47:10+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001608s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001735s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002715s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001985s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002057s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `hx_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.001055s ]
+---------------------------------------------------------------
+[ 2019-08-27T09:47:11+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/auth/admin?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001933s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.003444s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001657s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.002431s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001257s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'auth/admin' LIMIT 1 [ RunTime:0.000843s ]
+---------------------------------------------------------------
+[ 2019-08-27T09:47:12+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566870431673
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001840s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001608s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001721s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.002177s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001363s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000668s ]
+---------------------------------------------------------------
+[ 2019-08-27T09:47:14+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/addon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001407s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.001257s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001084s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001896s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `hx_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000852s ]
+---------------------------------------------------------------
+[ 2019-08-27T09:50:22+08:00 ] 0.0.0.0 GET hexiao.com/public/admin/auth/admin/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1566870431674
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002274s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group_access` [ RunTime:0.002545s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `hx_auth_group_access` `aga` LEFT JOIN `hx_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_rule` [ RunTime:0.001896s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `hx_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_admin` [ RunTime:0.002341s ]
+[ sql ] [ SQL ] SELECT `id` FROM `hx_admin` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hx_auth_group` [ RunTime:0.001670s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `status` = 'normal' [ RunTime:0.001480s ]
+[ sql ] [ SQL ] SELECT * FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001109s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `hx_auth_group` WHERE  `id` IN (1,2,3,4,5) [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT `uid`,`group_id` FROM `hx_auth_group_access` WHERE  `group_id` IN (1,2,3,4,5) [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`avatar`,`email`,`loginfailure`,`logintime`,`createtime`,`updatetime`,`status` FROM `hx_admin` WHERE  `id` IN (1) ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001272s ]

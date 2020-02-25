@@ -1,0 +1,32 @@
+[ 2019-08-31T18:29:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001948s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-31T18:29:11+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-31T18:29:11+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004816s ]
+[ 2019-08-31T18:29:11+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000068s ]
+[ 2019-08-31T18:29:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000239s ]
+[ 2019-08-31T18:29:11+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-31T18:29:11+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001680s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-31T18:29:11+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'service' [ RunTime:0.001117s ]
+[ 2019-08-31T18:29:11+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_service' [ RunTime:0.001044s ]
+[ 2019-08-31T18:29:11+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_service' ORDER BY ORDINAL_POSITION [ RunTime:0.001411s ]
+[ 2019-08-31T18:34:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-31T18:34:38+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-31T18:34:38+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005102s ]
+[ 2019-08-31T18:34:38+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000083s ]
+[ 2019-08-31T18:34:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000263s ]
+[ 2019-08-31T18:34:38+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-31T18:34:38+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000758s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-31T18:34:38+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'service' [ RunTime:0.000797s ]
+[ 2019-08-31T18:34:38+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_service' [ RunTime:0.000750s ]
+[ 2019-08-31T18:34:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-31T18:34:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-31T18:34:41+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005476s ]
+[ 2019-08-31T18:34:41+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000064s ]
+[ 2019-08-31T18:34:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000239s ]
+[ 2019-08-31T18:34:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-31T18:34:41+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-31T18:34:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'service' [ RunTime:0.000808s ]
+[ 2019-08-31T18:34:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_service' [ RunTime:0.000804s ]
+[ 2019-08-31T18:34:41+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_service' ORDER BY ORDINAL_POSITION [ RunTime:0.001144s ]

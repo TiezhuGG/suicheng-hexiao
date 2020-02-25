@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+             						活动报名接口文档
+
+             调用方式:HTTP. 、JSON
+
+             网址：目前是本地 ：hx.le-cx.com
+
+             1、上传图片
+
+             接口路径：网址/api/common/upload
+
+             req ：
+             无
+              resp:
+             参数		类型		参数说明
+             file       file    文件类型以及名字都是file
+
+
+            resp ：
+             参数		    类型		参数说明
+             code           int     状态吗  （1 成功  0 失败）
+             msg            string  状态描述
+             data           string  图片路径  多个用逗号隔开
+
+
+
+
+             2、获取指定活动内容
+             接口路径：网址/api/activity/getactivityinfo
+             req ：
+             参数		    类型		参数说明
+             activity_id	int		活动ID
+            openid          int     用户openid
+
+              resp:
+             参数		类型		参数说明
+             code		int		状态码
+             Msg		string	状态描述
+             Data		string	主播详细信息
+
+                                 data:{
+                                    id:活动ID
+                                    activityname:活动名
+                                    logo:活动logo
+                                    activityimages：活动幻灯片
+                                    organizers：主办方
+                                    block:标段
+                                    views:浏览量
+                                    url_address:网页地址
+                                    address:活动地址
+                                    navigation_x：导航经度
+                                    navigation_y：导航维度
+                                    audit_id：核销员 （前端用不着）
+                                    signuptime：报名时间
+                                    signupendtime：报名结束时间
+                                    audittime：活动核销时间
+                                    auditendtime：核销结束时间
+                                    statrtime：活动开始时间
+                                    endtime：活动结束时间
+                                    signupnum：活动名额
+                                    notcharge：是否收费  0 不收费 1 收费
+                                    charge：收费金额
+                                    notaudit：审核状态  -1 未报名  0 待审核  1 审核通过  2 拒绝
+                                    aduitstatus：是否审核 0不用审核 1 要审核
+                                    signupmust：报名须知
+                                    custom：报名表单{
+                                                    title:标题
+                                                    futitle:副标题
+                                                    type:0 文本  1图片
+                                                    }
+                                    url：入口地址
+                                    public_name:公众号名字
+                                    public_desc:公众号介绍
+                                    public_logo:公众号logo
+                                    rqcode：公众号二维码
+                                    paper:票种 {
+                                                    id:票种id
+                                                    papername:票种名
+                                                    charge:是否付费 0 不 1 要
+                                                    chargenum:收费金额
+                                                    note:说明
+                                                }
+
+                                 }
+
+
+             3、用户报名
+             接口路径：网址/api/Sign/addsign
+             req ：
+             参数		    类型		参数说明
+             userid         int	    用户ID
+             activity_id    int     活动id
+             activity_name  string  活动名称
+             username       string  用户名
+             paper_id       int     票种id
+             status         int     审核状态（根据上个接口返回的审核状态判读，如果上个接口返回的是0那么这里传1，如果是1这里传0）
+             cusform        string  (传二维数组)表单:{
+                                            title:标题
+                                            content:内容   （图片就是图片路径多个用逗号隔开）
+                                            type:类型  0 文本  1 图片
+                                        }
+
+
+             Resp:
+             参数			类型		参数说明
+             Code		    string	状态吗
+             Msg			string	状态说明
+
+
+
+
+            4：微信授权
+
+            接口路径：网址/api/Getwxuser/get_user_all
+             req ：
+             参数			类型		参数说明
+             code		    string	用户唯一标识
+
+            Resp:
+             参数			类型		参数说明
+             Code		    string	状态吗
+             Msg			string	状态说明
+             userid         int     用户id
+             openid         string  微信用户openid
+             name           string  用户名
+
+            5:上传图片
+
+            接口路径：网址/api/common/upload
+
+            req ：
+             参数			类型		参数说明
+             file		    file	图片
+
+            Resp:
+             参数			类型		参数说明
+             Code		    string	状态吗   0失败  1成功
+             Msg			string	状态说明
+             time           string  时间戳
+             data           string  图片路径
+
+
+            6 微信支付
+
+            接口地址:网址:/api/pay/wepay
+
+            req ：
+            参数			    类型		参数说明
+            userid          int     用户id
+            activity_id     int     活动id
+
+
+            7.获取票种信息
+            接口地址:网址:/api/sign/getsigninfo
+
+            req ：
+            参数			    类型		参数说明
+            activity_id     int     活动id
+            user_id         int     用户id
+
+
+            Resp:
+             参数			类型		参数说明
+             Code		    string	状态吗   0失败  1成功
+             Msg			string	状态说明
+             pay            int     支付状态  0 未支付 1 已支付
+             data           string  报名信息（已支付存在）{
+                                                    id:报名列表id
+                                                    activity_id:活动id
+                                                    activity_name:活动名
+                                                    qrcode：二维码
+                                                    username:用户名
+                                                    vip_id:用户id
+                                                    signtime:报名时间
+                                                    aduit_id:核销员id
+                                                    paper_id:票种id
+                                                    papernum:票号
+                                                    status:状态  0 已报名  1 已签到
+                                                    aduit:审核状态  0待审核 1 审核通过 2 审核拒绝
+                                                    sucform:   {
+                                                                title:标题
+                                                                futitle:副标题
+                                                                type:0 文本 1图片
+                                                                content:内容
+                                                                }
+                                                    pay:支付状态 0待支付 1已支付 2已关闭
+                                                }
+
+            paper           string  票种信息 （审核通过 未支付存在）{
+                                                                activity_id:活动id
+                                                                papername:票种名
+                                                                note:票种说明
+                                                                charge:是否收费 0不 1要
+                                                                chargenum:收费金额
+                                                                }
+
+
+
+             8.签到核销
+            接口地址:网址:/api/sign/hexiao
+
+            req ：
+            参数			    类型		参数说明
+            signlist_id     int     报名信息id
+            openid          string  用户唯一标志
+
+
+            Resp:
+             参数			类型		参数说明
+             Code		    string	状态吗
+             Msg			string	状态说明
+
+            9 获取服务器条款
+
+            接口地址:网址:/api/vip/getservice
+
+            req ：
+            参数			    类型		参数说明
+
+            无
+
+             Resp:
+             参数			类型		参数说明
+             Code		    string	状态吗
+             Msg			string	状态说明
+</pre>
+</body>
+</html>

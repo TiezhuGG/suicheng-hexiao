@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="js/rem.js"></script>
+		<script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+		<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+		<title>活动</title>
+		<link rel="stylesheet" href="css/common.css?v-6">
+	</head>
+	<body>
+		<div id="app">
+			{{config.res}}
+			<input ref="filElem" type="file" class="upload-file" @change="getFile" style="display: none;">
+			<!-- 首页 -->
+			<div class="index">
+				<img :src="vote.logo" class="banner" />
+				
+				<div class="info">
+					<div class="title">{{vote.activityname}}</div>
+					<div class="look">
+						<!-- <img src="imgs/i1.png" /> -->
+						<!-- <span>浏览{{vote.views}}</span> -->
+						<span>标段（包）：{{vote.block}}</span>
+					</div>
+					<div class="time">
+						<img src="imgs/i2.png" />
+						<!-- <span>{{vote.statrtime}} - {{vote.endtime}}</span> -->
+						<span>报名时间： {{vote.signuptime}} 至 {{vote.signupendtime}}</span>
+					</div>
+			<!-- 		<a :href="'https://apis.map.qq.com/uri/v1/marker?marker=coord:'+vote.navigation_x+','+vote.navigation_y+';title:'+vote.activityname+';addr:'+vote.address+'&referer=myapp'">
+						<div class="address">
+							<img src="imgs/i3.png" class="i" />
+							<span>{{vote.address}}</span>
+							<img src="imgs/i4.png" class="right" />
+						</div>
+					</a>
+					<div class="free">
+						<img src="imgs/i5.png" />
+						<span>{{vote.notcharge==1?'￥ '+vote.charge:'免费'}}</span>
+					</div> -->
+				</div>
+				
+				<div class="wx">
+					<div class="img">
+						<img :src="vote.public_logo||'imgs/i6.png'" />
+					</div>
+					<div class="ent">
+						<div class="name">{{vote.public_name}}</div>
+						<div class="tips">{{vote.public_desc}}</div>
+					</div>
+					<div class="but">
+						<div @click="pops('wx')">关注</div>
+					</div>
+				</div>
+				
+				<div class="content">
+					<div class="title">活动</div>
+					<div class="pr" v-html="vote.signupmust">
+					</div>
+				</div>
+				
+				<div class="flex" :class="{on:pop.wx}">
+					<div @click="but">{{vote.notaudit==-1?'立即报名':''}}{{vote.notaudit==0?'审核中':''}}{{vote.notaudit==2?'审核未通过 重新报名':''}}{{vote.notaudit==1&&vote.myjoin.data.pay==0?'已审核 待支付':''}}{{vote.notaudit==1&&vote.myjoin.data.pay==1?'查看报名信息':''}}</div>
+				</div>
+			</div>
+			
+			<!-- 关注二维码 -->
+			<div class="qr" :class="{in:pop.wx}">
+				<div class="mask" @click="pops('wx')"></div>
+				<div class="pop">
+					<img :src="vote.rqcode" />
+					<div>长按扫一扫关注公众号</div>
+				</div>
+			</div>
+			
+			<!-- 选择门票 -->
+			<div class="option" :class="{in:pop.option}">
+				<div class="mask" @click="pops('option')"></div>
+				<div class="pop">
+					<div class="title">选择票种</div>
+					<div class="vote">
+						<div class="img">
+							<img :src="vote.logo" />
+						</div>
+						<div class="ent">
+							<div class="name">{{vote.activityname}}</div>
+							<a :href="'https://apis.map.qq.com/uri/v1/marker?marker=coord:'+vote.navigation_x+','+vote.navigation_y+';title:'+vote.activityname+';addr:'+vote.address+'&referer=myapp'">
+								<div class="address">
+									<img src="imgs/i10.png" />
+									<span>{{vote.address}}</span>
+								</div>
+							</a>
+							<div class="time">
+								<img src="imgs/i11.png" />
+								<span>{{vote.statrtime}} - {{vote.endtime}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="list">
+						<div class="i" :class="{in:index==join.paperkey}" @click='paper(index)' v-for="(item,index) in vote.paper" :key="index">
+							<img src="imgs/i12.png" />
+							<div class="name">
+								{{item.papername}}
+								<span>{{item.charge==1?'￥ '+item.chargenum:'免费'}}</span>
+							</div>
+							<div class="tip">{{item.note}}</div>
+						</div>
+					</div>
+					<div class="but" @click="option">确定</div>
+				</div>
+			</div>
+			
+			<!-- 填写表单 -->
+			<div class="froms" :class="{in:pop.froms}">
+				<div class="mask" @click="pops('froms')"></div>
+				<div class="pop">
+					<div class="title">请填写报名表单</div>
+					<div class="inp">
+						<div class="i" v-if="item.type==0" v-for="(item,index) in vote.custom" :key="index">
+							<div>{{item.title}}</div>
+							<input type="text" v-model="item.content" :placeholder="'请填写'+item.title">
+						</div>
+					</div>
+					<div class="file">
+						<div class="i" v-if="item.type==1" v-for="(item,index) in vote.custom" :key="index">
+							<div>{{item.title}}</div>
+							<p>{{item.futitle}}</p>
+							<img :src="item.content||'imgs/i13.png'" @click="choiceImg(index)" />
+						</div>
+					</div>
+					<div class="agree">
+						<img :src="join.agree?'imgs/i15.png':'imgs/i14.png'" @click="agree" />
+						<span>我已阅读并同意</span>
+						<a href="agree.html">《活动用户服务协议》</a>
+					</div>
+					<div class="op">
+						<div class="but" @click="joins">提交</div>
+						<div class="close" @click="pops('froms')">取消</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 报名成功弹窗 -->
+			<div class="join" :class="{in:pop.join}">
+				<div class="ing" v-if="vote.notaudit!=1">
+					<div class="mask" @click="pops('join')"></div>
+					<div class="pop">
+						<img src="imgs/i16.png" class="close" @click="pops('join')">
+						<img src="imgs/i17.png" class="i1">
+						<div class="title">报名审核中</div>
+						<div class="tips">您的报名正在审核中，请您耐心等待</div>
+						<img src="imgs/i19.png" class="i2">
+					</div>
+				</div>
+				<div class="success" v-if="vote.notaudit==1">
+					<div class="mask" @click="pops('join')"></div>
+					<div class="pop">
+						<img src="imgs/i16.png" class="close" @click="pops('join')">
+						<img src="imgs/i18.png" class="i1">
+						<div class="title">审核通过</div>
+						<div class="tips">您的报名已审核通过，请前往支付</div>
+						<div class="but" @click="wxpay">前往支付￥{{vote.myjoin.data.paper?vote.myjoin.data.paper.chargenum:''}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <script src="js/common.js"></script> -->
+		<script src="js/vue.js?v-120"></script>
+		<!-- <script>
+			var url = window.location.href;
+			alert(url);
+		</script> -->
+	</body>
+</html>

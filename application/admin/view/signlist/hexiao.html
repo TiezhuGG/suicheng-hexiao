@@ -1,0 +1,20 @@
+<form id="form-form" class="form-horizontal" name="iddd" role="form" data-toggle="validator" method="POST" action="">
+
+
+    <div class="form-group">
+        <label  class="control-label col-xs-12 col-sm-2">{:__('核销地址')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-signtime" style="height: 200px" class="form-control"  data-use-current="true" name="row" type="text">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
+<script language=javascript>
+    document.iddd.row.focus();
+</script>

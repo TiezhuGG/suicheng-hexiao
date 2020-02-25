@@ -1,0 +1,46 @@
+[ 2019-08-17T15:46:21+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001052s ] mysql:host=127.0.0.1;dbname=cancel;charset=utf8
+[ 2019-08-17T15:46:21+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'activity' [ RunTime:0.000800s ]
+[ 2019-08-17T15:46:21+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_activity' [ RunTime:0.000773s ]
+[ 2019-08-17T15:46:21+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_activity' ORDER BY ORDINAL_POSITION [ RunTime:0.001372s ]
+[ 2019-08-17T15:46:32+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001114s ] mysql:host=127.0.0.1;dbname=cancel;charset=utf8
+[ 2019-08-17T15:46:32+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'reply' [ RunTime:0.000789s ]
+[ 2019-08-17T15:46:32+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_reply' [ RunTime:0.000805s ]
+[ 2019-08-17T15:46:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_reply' ORDER BY ORDINAL_POSITION [ RunTime:0.001184s ]
+[ 2019-08-17T15:46:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001529s ] mysql:host=127.0.0.1;dbname=cancel;charset=utf8
+[ 2019-08-17T15:46:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'share' [ RunTime:0.000836s ]
+[ 2019-08-17T15:46:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_share' [ RunTime:0.000898s ]
+[ 2019-08-17T15:46:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_share' ORDER BY ORDINAL_POSITION [ RunTime:0.001222s ]
+[ 2019-08-17T15:54:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000086s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-17T15:54:10+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-17T15:54:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011241s ]
+[ 2019-08-17T15:54:10+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-17T15:54:10+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-17T15:54:10+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'share' [ RunTime:0.000741s ]
+[ 2019-08-17T15:54:10+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_share' [ RunTime:0.000930s ]
+[ 2019-08-17T15:54:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000076s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-17T15:54:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-17T15:54:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005443s ]
+[ 2019-08-17T15:54:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-17T15:54:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-17T15:54:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'share' [ RunTime:0.000735s ]
+[ 2019-08-17T15:54:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_share' [ RunTime:0.000730s ]
+[ 2019-08-17T15:54:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_share' ORDER BY ORDINAL_POSITION [ RunTime:0.001172s ]
+[ 2019-08-17T15:54:46+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000071s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-17T15:54:46+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-17T15:54:46+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005804s ]
+[ 2019-08-17T15:54:46+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-17T15:54:46+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000742s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-17T15:54:46+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'activity' [ RunTime:0.000735s ]
+[ 2019-08-17T15:54:46+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_activity' [ RunTime:0.000747s ]
+[ 2019-08-17T15:55:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000072s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-17T15:55:09+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-17T15:55:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003412s ]
+[ 2019-08-17T15:55:09+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-17T15:55:09+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000852s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-17T15:55:09+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'activity' [ RunTime:0.000728s ]
+[ 2019-08-17T15:55:09+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_activity' [ RunTime:0.000746s ]
+[ 2019-08-17T15:55:09+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_activity' ORDER BY ORDINAL_POSITION [ RunTime:0.001262s ]

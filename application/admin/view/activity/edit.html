@@ -1,0 +1,236 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Activityname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-activityname" data-rule="required" class="form-control" name="row[activityname]" type="text" value="{$row.activityname|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Logo')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-Logo" class="form-control" size="50" name="row[logo]" type="text" value="{$row.logo|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-Logo" class="btn btn-danger plupload" data-input-id="c-Logo" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-Logo"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-Logo" class="btn btn-primary fachoose" data-input-id="c-Logo" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-Logo"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-Logo"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Activityimages')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-activityimages" class="form-control" size="50" name="row[activityimages]" type="text" value="{$row.activityimages|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-activityimages" class="btn btn-danger plupload" data-input-id="c-activityimages" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-activityimages"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-activityimages" class="btn btn-primary fachoose" data-input-id="c-activityimages" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-activityimages"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-activityimages"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Organizers')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-organizers" class="form-control" name="row[organizers]" type="text" value="{$row.organizers|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group" data-toggle="addresspicker" data-input-id="c-address"  data-lat-id="c-navigation_y"  data-lng-id="c-navigation_x">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address" class="form-control" name="row[address]" type="text" value="{$row.address|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Block')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-block" class="form-control" name="row[block]" type="text" value="{$row.block|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Public_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-public_name" class="form-control" name="row[public_name]" type="text" value="{$row.public_name|htmlentities}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Public_desc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-public_desc" class="form-control" name="row[public_desc]" type="text" value="{$row.public_desc|htmlentities}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Public_logo')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-public_logo" class="form-control" size="50" name="row[public_logo]" type="text" value="{$row.public_logo|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-public_logo" class="btn btn-danger plupload" data-input-id="c-public_logo" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-public_logo"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-public_logo" class="btn btn-primary fachoose" data-input-id="c-public_logo" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-activityimages"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-public_logo"></ul>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Rqcode')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-rqcode" class="form-control" size="50" name="row[rqcode]" type="text" value="{$row.rqcode|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-rqcode" class="btn btn-danger plupload" data-input-id="c-rqcode" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-rqcode"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-rqcode" class="btn btn-primary fachoose" data-input-id="c-rqcode" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-activityimages"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-rqcode"></ul>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Views')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-views" class="form-control"  name="row[views]" type="text" value="{$row.views|htmlentities}">
+        </div>
+    </div>
+    <div id="x" class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Navigation_x')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-navigation_x" class="form-control" name="row[navigation_x]" type="text" value="{$row.navigation_x|htmlentities}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Navigation_y')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-navigation_y" class="form-control" name="row[navigation_y]" type="text" value="{$row.navigation_y|htmlentities}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Audit_id')}:</label>
+        <div class="col-xs-12 col-sm-8" data-multiple="true">
+            <select  multiple="multiple" id="c-audit_id"   class="form-control selectpicker"  name="row[audit_id][]">
+                {foreach name="hxlist" item="vo"}
+                <option value="{$key}" {in name="key" value="$row.audit_id"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Signuptime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-signuptime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[signuptime]" type="text" value="{:$row.signuptime?datetime($row.signuptime):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Signupendtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-signupendtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[signupendtime]" type="text" value="{:$row.signupendtime?datetime($row.signupendtime):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Audittime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-audittime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[audittime]" type="text" value="{:$row.audittime?datetime($row.audittime):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Auditendtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-auditendtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[auditendtime]" type="text" value="{:$row.auditendtime?datetime($row.auditendtime):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Statrtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-statrtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[statrtime]" type="text" value="{:$row.statrtime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Endtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-endtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[endtime]" type="text" value="{:$row.endtime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Signupnum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-signupnum" class="form-control" name="row[signupnum]" type="number" value="{$row.signupnum|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Notcharge')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select  id="c-notcharge" data-rule="required" class="form-control selectpicker" name="row[notcharge]">
+                {foreach name="notchargeList" item="vo"}
+                <option value="{$key}" {in name="key" value="$row.notcharge"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group" id="notcharge" style="display:none;">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Charge')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-charge" class="form-control" name="row[charge]" type="number" value="{$row.charge}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Notaudit')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <div class="radio">
+                {foreach name="notauditList" item="vo"}
+                <label for="row[notaudit]-{$key}"><input id="row[notaudit]-{$key}" name="row[notaudit]" type="radio" value="{$key}" {in name="key" value="$row.notaudit"}checked{/in} /> {$vo}</label>
+                {/foreach}
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Signupmust')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-signupmust" class="editor " rows="5" name="row[signupmust]" cols="50">{$row.signupmust|htmlentities}</textarea>
+        </div>
+    </div>
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
+
+<script src="/assets/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var ch=$('#c-notcharge').val();
+        if(ch==1){
+            $('#notcharge').css('display','block');
+        }
+        $('#c-notcharge').change(function(){
+            var value=$('#c-notcharge').val();
+            if(value==1){
+                $('#notcharge').css('display','block');
+            }else{
+                $('#notcharge').css('display','none');
+            }
+
+        });
+
+    });
+
+</script>

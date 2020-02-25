@@ -1,0 +1,60 @@
+[ 2019-08-29T17:21:22+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001012s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-29T17:21:22+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-29T17:21:22+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004858s ]
+[ 2019-08-29T17:21:22+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000092s ]
+[ 2019-08-29T17:21:22+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000269s ]
+[ 2019-08-29T17:21:22+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-29T17:21:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000071s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-29T17:21:33+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-29T17:21:33+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005220s ]
+[ 2019-08-29T17:21:33+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000063s ]
+[ 2019-08-29T17:21:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000244s ]
+[ 2019-08-29T17:21:33+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-29T17:21:33+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000787s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-29T17:21:33+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'order' [ RunTime:0.000948s ]
+[ 2019-08-29T17:21:33+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_order' [ RunTime:0.000833s ]
+[ 2019-08-29T17:21:33+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_order' ORDER BY ORDINAL_POSITION [ RunTime:0.001171s ]
+[ 2019-08-29T17:32:32+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000079s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-29T17:32:32+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-29T17:32:32+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004917s ]
+[ 2019-08-29T17:32:32+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000083s ]
+[ 2019-08-29T17:32:32+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000256s ]
+[ 2019-08-29T17:32:32+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-29T17:32:32+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-29T17:32:32+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'order' [ RunTime:0.000801s ]
+[ 2019-08-29T17:32:32+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_order' [ RunTime:0.000821s ]
+[ 2019-08-29T17:32:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000103s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-29T17:32:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-29T17:32:36+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005557s ]
+[ 2019-08-29T17:32:36+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000090s ]
+[ 2019-08-29T17:32:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000314s ]
+[ 2019-08-29T17:32:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-29T17:32:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000765s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-29T17:32:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'order' [ RunTime:0.000852s ]
+[ 2019-08-29T17:32:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_order' [ RunTime:0.001340s ]
+[ 2019-08-29T17:32:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_order' ORDER BY ORDINAL_POSITION [ RunTime:0.001171s ]
+[ 2019-08-29T17:36:14+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000072s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-29T17:36:14+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-29T17:36:14+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.004698s ]
+[ 2019-08-29T17:36:14+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000053s ]
+[ 2019-08-29T17:36:14+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000210s ]
+[ 2019-08-29T17:36:15+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-29T17:36:15+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000739s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-29T17:36:15+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'order' [ RunTime:0.000909s ]
+[ 2019-08-29T17:36:15+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_order' [ RunTime:0.000872s ]
+[ 2019-08-29T17:36:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000068s ]
+[ info ] [ LOG ] INIT File
+[ 2019-08-29T17:36:19+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-08-29T17:36:19+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.005149s ]
+[ 2019-08-29T17:36:19+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000064s ]
+[ 2019-08-29T17:36:19+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000255s ]
+[ 2019-08-29T17:36:19+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-08-29T17:36:19+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000769s ] mysql:host=127.0.0.1;port=3306;dbname=cancel;charset=utf8
+[ 2019-08-29T17:36:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'order' [ RunTime:0.000787s ]
+[ 2019-08-29T17:36:19+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'hx_order' [ RunTime:0.000786s ]
+[ 2019-08-29T17:36:19+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'cancel' AND table_name = 'hx_order' ORDER BY ORDINAL_POSITION [ RunTime:0.001337s ]

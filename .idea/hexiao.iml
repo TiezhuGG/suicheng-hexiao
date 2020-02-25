@@ -2,6 +2,19 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/CachedObjectStorage" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/CalcEngine" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/Calculation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/Cell" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/Chart" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/Helper" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/Reader" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/RichText" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/Shared" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/Style" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/Worksheet" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/Writer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel/locale" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/endroid/qr-code" />

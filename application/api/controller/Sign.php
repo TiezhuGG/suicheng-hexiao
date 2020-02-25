@@ -135,7 +135,7 @@ class Sign extends Api
     public function qrcode($paper_id){
         include VENDOR_PATH.'phpqrcode/phpqrcode.php';
         $qrcode = new \QRcode();
-        $url='zhuhong.le-cx.com/vote/confirm.html?paper_id='.$paper_id;
+        $url=$_SERVER['HTTP_HOST'].'/vote/confirm.html?paper_id='.$paper_id;
 //         $qrimage = new \QRimage();
 
         $value = $url;                    //二维码内容
@@ -180,6 +180,9 @@ class Sign extends Api
         if($vip){
 
             $sign=db('signlist')->where(['id'=>$data['signlist_id'],'deletetime'=>null])->find();
+            if(empty($sign['cusform'])){
+                return json_encode($this->data=['code'=>400,'msg'=>'请完善公司信息']);
+            }
             $where['audit_id'] = array('like','%'.$vip['openid'].'%');
             $where['id'] =$sign['activity_id'] ;
             $hexiao=db('activity')->where($where)->find();

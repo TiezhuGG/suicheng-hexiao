@@ -33,6 +33,19 @@
       <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
       <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/Writer" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/CalcEngine" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/Worksheet" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/Shared" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/locale" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/Reader" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/Helper" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/RichText" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/CachedObjectStorage" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/Calculation" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/Style" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/Chart" />
+      <path value="$PROJECT_DIR$/vendor/PHPExcel/Cell" />
     </include_path>
   </component>
 </project>

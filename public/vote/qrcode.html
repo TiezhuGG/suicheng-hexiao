@@ -53,7 +53,8 @@
 						vid:'',
 						uid:''
 					},
-					vote:{}
+					vote:{},
+					id: ''
 				},
 				created: function () {
 					var _ = this;
@@ -65,9 +66,11 @@
 						_.config.vid = _.GetQueryString('activity_id');
 						_.config.uid = _.GetQueryString('user_id');
 						_.config.openid = _.GetQueryString('openid');
+						_.id = _.GetQueryString('id');
 						axios.get(_.url+'api/sign/getsigninfo', {
 							params: {
 								activity_id: _.config.vid,
+								id: _.id,
 								user_id: _.config.uid
 							}
 						}).then(function (res) {

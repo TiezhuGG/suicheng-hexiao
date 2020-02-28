@@ -36,7 +36,7 @@
                 <p class="time">报名时间: {{item.activity.signuptime}}至{{item.activity.signupendtime}}</p>
                 <div class="bottom">
                     <p class="date">开标: {{item.activity.statrtime}}</p>
-                    <p class="data_upload" @click="getSignInfo(item.activity_id)">上传公司资料</p>
+                    <p class="data_upload" @click="getSignInfo(item.activity_id, item.id)">上传公司资料</p>
                 </div>
             </div>
             <!-- 待核销 -->
@@ -158,7 +158,12 @@
             },
             methods: {
                 toQrcode(activity_id) {
-                    window.location.href = this.url + '/vote/qrcode.html?activity_id=' + activity_id + '&user_id=' + this.userid + '&openid=' + this.openid;
+                    for(let val of this.unfinished_list) {
+                        if(val.activity_id == activity_id) {
+                            let id = val.id
+                            window.location.href = this.url + '/vote/qrcode.html?activity_id=' + activity_id + '&user_id=' + this.userid + '&openid=' + this.openid + '&id=' + id;
+                        }
+                    }
                 },
                 // 获取待完善列表
                 async getUnfinishedList() {
@@ -172,7 +177,6 @@
                             this.unfinished_list.push(val)
                         }
                     }
-                    // console.log(this.unfinished_list)
                 },
                 // 获取待核销列表
                 async getNoSignList() {
@@ -183,6 +187,8 @@
                         }
                     })
                     this.no_sign_list = res.data.data
+                    console.log(this.no_sign_list)
+                    // console.log(this.no_sign_list)
                     // for (let val of res.data.data) {
                     //     if (val.cusform == 1) {
                     //         this.no_sign_list.push(val)
@@ -209,21 +215,22 @@
                     this.is_sign = 2
                 },
 
-                async getSignInfo(id) {
+                async getSignInfo(activity_id, id) {
                     const res = await axios.get(`${this.url}/api/sign/getsigninfo`, {
                         params: {
-                            activity_id: id,
+                            activity_id: activity_id,
+                            id: id,
                             user_id: this.userid
                         }
                     })
-                    this.sign_id = res.data.data.id
-                    this.getvote(res, id)
+                    this.sign_id = id
+                    this.getvote(res, activity_id)
                 },
 
-                async getvote(myjoin, id) {
+                async getvote(myjoin, activity_id) {
                     const res = await axios.get(`${this.url}/api/activity/getactivityinfo`, {
                         params: {
-                            activity_id: id,
+                            activity_id: activity_id,
                             openid: this.openid
                         }
                     })

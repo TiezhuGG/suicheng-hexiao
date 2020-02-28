@@ -210,23 +210,22 @@ var app = new Vue({
 			// this.enroll()
 		},
 		// 直接报名成功，不弹出表单
-		enroll() {
+		async enroll() {
+
 			var _ = this;
 			var key = _.join.paperkey;
 			var status = _.vote.aduitstatus == 0 ? 1 : 0;
 			var url = _.url + 'api/Sign/addsign?activity_id=' + _.config.vid + '&userid=' + _.config.uid + '&status=' + status + '&cusform=' + JSON.stringify(_.vote.custom) + '&paper_id=' + _.vote.paper[key].id + '&activity_name=' + _.vote.activityname + '&username=' + _.config.name;
-			// axios,get(url).then(res => {
-			// 	console.log(res.data)
 
-			// })
 			axios.get(url).then(function (res) {
-				console.log(res.data);
+				console.log(res.data)
 				if (res.data.code == 200) {
+					console.log('id', res.data.id)
 					// _.pops('froms');
-
 					axios.get(_.url + 'api/sign/getsigninfo', {
 						params: {
 							activity_id: _.config.vid,
+							id: res.data.id,
 							user_id: _.config.uid
 						}
 					}).then(function (res) {
@@ -240,7 +239,8 @@ var app = new Vue({
 								_.pops('join');
 							} else {
 								if (_.vote.notaudit == 1 && _.vote.myjoin.data.data) {
-									window.location.href = _.url + 'vote/qrcode.html?activity_id=' + _.config.vid + '&user_id=' + _.config.uid + '&openid=' + _.config.openid;
+									// window.location.href = _.url + 'vote/qrcode.html?activity_id=' + _.config.vid + '&user_id=' + _.config.uid + '&openid=' + _.config.openid + '&id=' + res.data.id;
+									window.location.href = _.url + 'vote/me.html'
 									return;
 								}
 							}
@@ -292,13 +292,13 @@ var app = new Vue({
 
 
 			axios.get(url).then(function (res) {
-				console.log(res.data);
 				if (res.data.code == 200) {
 					_.pops('froms');
-
+					console.log(res.data.id)
 					axios.get(_.url + 'api/sign/getsigninfo', {
 						params: {
 							activity_id: _.config.vid,
+							id: res.data.id,
 							user_id: _.config.uid
 						}
 					}).then(function (res) {
@@ -312,7 +312,8 @@ var app = new Vue({
 								_.pops('join');
 							} else {
 								if (_.vote.notaudit == 1 && _.vote.myjoin.data.data) {
-									window.location.href = _.url + 'vote/qrcode.html?activity_id=' + _.config.vid + '&user_id=' + _.config.uid + '&openid=' + _.config.openid;
+									// window.location.href = _.url + 'vote/qrcode.html?activity_id=' + _.config.vid + '&user_id=' + _.config.uid + '&openid=' + _.config.openid;
+									window.location.href = _.url + 'vote/me.html'
 									return;
 								}
 							}

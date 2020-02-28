@@ -35,6 +35,7 @@ var app = new Vue({
 			this.getSign()
 		} else {
 			this.userinfo();
+			// console.log('授权失败')
 		}
 		// var _ = this;
 		// _.userinfo(); 
@@ -94,7 +95,7 @@ var app = new Vue({
 				});
 			}
 		},
-		getSign(){
+		getSign() {
 			var _ = this;
 			axios.get(_.url + 'api/sign/getsigninfo', {
 				params: {
@@ -181,18 +182,18 @@ var app = new Vue({
 			var _ = this;
 			vote = _.vote;
 
-			if (vote.notaudit == 0) {
-				_.pops('join');
-				return;
-			}
-			if (vote.notaudit == 1 && vote.myjoin.data.pay != 1) {
-				_.pops('join');
-				return;
-			}
-			if (vote.notaudit == 1 && vote.myjoin.data.data) {
-				window.location.href = _.url + 'vote/qrcode.html?activity_id=' + _.config.vid + '&user_id=' + _.config.uid + '&openid=' + _.config.openid;
-				return;
-			}
+			// if (vote.notaudit == 0) {
+			// 	_.pops('join');
+			// 	return;
+			// }
+			// if (vote.notaudit == 1 && vote.myjoin.data.pay != 1) {
+			// 	_.pops('join');
+			// 	return;
+			// }
+			// if (vote.notaudit == 1 && vote.myjoin.data.data) {
+			// 	window.location.href = _.url + 'vote/qrcode.html?activity_id=' + _.config.vid + '&user_id=' + _.config.uid + '&openid=' + _.config.openid;
+			// 	return;
+			// }
 
 			// 去报名
 			_.pops('option');
@@ -205,8 +206,8 @@ var app = new Vue({
 			}
 			// 去报名
 			_.pops('option');
-			// _.pops('froms');
-			this.enroll()
+			_.pops('froms');
+			// this.enroll()
 		},
 		// 直接报名成功，不弹出表单
 		enroll() {
@@ -214,6 +215,10 @@ var app = new Vue({
 			var key = _.join.paperkey;
 			var status = _.vote.aduitstatus == 0 ? 1 : 0;
 			var url = _.url + 'api/Sign/addsign?activity_id=' + _.config.vid + '&userid=' + _.config.uid + '&status=' + status + '&cusform=' + JSON.stringify(_.vote.custom) + '&paper_id=' + _.vote.paper[key].id + '&activity_name=' + _.vote.activityname + '&username=' + _.config.name;
+			// axios,get(url).then(res => {
+			// 	console.log(res.data)
+
+			// })
 			axios.get(url).then(function (res) {
 				console.log(res.data);
 				if (res.data.code == 200) {

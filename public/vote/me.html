@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
-    <link rel="stylesheet" href="./css/reset.css">
-    <script src="./js/rem.js"></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/me.css">
+    <link rel="stylesheet" href="./css/reset.css?v-110">
+    <script src="./js/rem.js?v-130"></script>
+    <link rel="stylesheet" href="./css/index.css?v-100">
+    <link rel="stylesheet" href="./css/me.css?v-120">
     <title>个人中心</title>
 </head>
 
@@ -31,17 +31,17 @@
             <div class="item" v-for="(item,index) in unfinished_list" :key="item.id" v-if="is_sign===2">
                 <div class="top">
                     <img src="./imgs/2.png" alt="">
-                    <p class="title">{{item.activityname}}</p>
+                    <p class="title">{{item.activity_name}}</p>
                 </div>
-                <p class="time">报名时间: {{item.signuptime}}至{{item.signupendtime}}</p>
+                <p class="time">报名时间: {{item.activity.signuptime}}至{{item.activity.signupendtime}}</p>
                 <div class="bottom">
-                    <p class="date">开标: {{item.statrtime}}</p>
-                    <p class="data_upload" @click="getSignInfo(item.id)" v-if="item.is_sign === 1">上传公司资料</p>
+                    <p class="date">开标: {{item.activity.statrtime}}</p>
+                    <p class="data_upload" @click="getSignInfo(item.activity_id)">上传公司资料</p>
                 </div>
             </div>
             <!-- 待核销 -->
             <div class="write-off-item" v-for="(item,index) in no_sign_list" :key="item.id" v-if="is_sign===0">
-                <div class="top">
+                <div class="top" @click="toQrcode(item.activity_id)">
                     <img src="./imgs/2.png" alt="">
                     <p class="title">{{item.activity_name}}</p>
                 </div>
@@ -53,7 +53,7 @@
             </div>
             <!-- 已核销 -->
             <div class="write-yes-item" v-for="(item,index) in is_sign_list" v-if="is_sign===1">
-                <div class="top">
+                <div class="top" @click="toQrcode(item.activity_id)">
                     <img src="./imgs/1.png" alt="">
                     <p class="title">{{item.activity_name}}</p>
                 </div>
@@ -126,6 +126,7 @@
                 no_sign_list: [],
                 unfinished_list: [],
                 is_sign: 2,
+                sign_id: '', // 报名id
                 pop: {
                     wx: false,
                     option: false,
@@ -156,11 +157,14 @@
                 this.getUnfinishedList()
             },
             methods: {
+                toQrcode(activity_id) {
+                    window.location.href = this.url + '/vote/qrcode.html?activity_id=' + activity_id + '&user_id=' + this.userid + '&openid=' + this.openid;
+                },
                 // 获取待完善列表
                 async getUnfinishedList() {
-                    const res = await axios.get(`${this.url}/api/Activity/getList`, {
+                    const res = await axios.get(`${this.url}/api/activity/mySign`, {
                         params: {
-                            openid: this.openid,
+                            vip_id: this.userid
                         }
                     })
                     for (let val of res.data.data) {
@@ -168,16 +172,7 @@
                             this.unfinished_list.push(val)
                         }
                     }
-                },
-                // 获取已核销列表
-                async getIsSignList() {
-                    const res = await axios.get(`${this.url}/api/Activity/myActivity`, {
-                        params: {
-                            openid: this.openid,
-                            is_sign: 1
-                        }
-                    })
-                    this.is_sign_list = res.data.data
+                    // console.log(this.unfinished_list)
                 },
                 // 获取待核销列表
                 async getNoSignList() {
@@ -188,6 +183,21 @@
                         }
                     })
                     this.no_sign_list = res.data.data
+                    // for (let val of res.data.data) {
+                    //     if (val.cusform == 1) {
+                    //         this.no_sign_list.push(val)
+                    //     }
+                    // }
+                },
+                // 获取已核销列表
+                async getIsSignList() {
+                    const res = await axios.get(`${this.url}/api/Activity/myActivity`, {
+                        params: {
+                            openid: this.openid,
+                            is_sign: 1
+                        }
+                    })
+                    this.is_sign_list = res.data.data
                 },
                 async writeOffNo() {
                     this.is_sign = 0
@@ -206,6 +216,7 @@
                             user_id: this.userid
                         }
                     })
+                    this.sign_id = res.data.data.id
                     this.getvote(res, id)
                 },
 
@@ -292,6 +303,7 @@
                     const res = await axios.get(`${_.url}/api/sign/form`, {
                         params: {
                             vip_id: parseInt(_.userid),
+                            id: this.sign_id,
                             activity_id: _.vote.id,
                             cusform: JSON.stringify(_.vote.custom)
                         }

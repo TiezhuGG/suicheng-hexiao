@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="19f7f21f-3a23-4696-a4bb-76a649ca9f0d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vote/agree.html" afterPath="$PROJECT_DIR$/public/vote/agree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vote/confirm.html" afterPath="$PROJECT_DIR$/public/vote/confirm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vote/css/common.css" afterPath="$PROJECT_DIR$/public/vote/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vote/css/index.css" afterPath="$PROJECT_DIR$/public/vote/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vote/detail.html" afterPath="$PROJECT_DIR$/public/vote/detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vote/index.html" afterPath="$PROJECT_DIR$/public/vote/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vote/js/vue.js" afterPath="$PROJECT_DIR$/public/vote/js/vue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vote/qrcode.html" afterPath="$PROJECT_DIR$/public/vote/qrcode.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vote/me.html" afterPath="$PROJECT_DIR$/public/vote/me.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/vote/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="104" column="61" lean-forward="false" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
+            <state relative-caret-position="418">
+              <caret line="105" column="58" lean-forward="false" selection-start-line="105" selection-start-column="58" selection-end-line="105" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -156,9 +157,9 @@
       <path value="$PROJECT_DIR$/vendor/PHPExcel/Cell" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="677" />
-    <option name="y" value="3" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="663" />
+    <option name="y" value="12" />
     <option name="width" value="1230" />
     <option name="height" value="1016" />
   </component>
@@ -202,6 +203,13 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="vote" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="suicheng_hexiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="suicheng_hexiao" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="vote" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -268,15 +276,15 @@
       <workItem from="1566987084233" duration="4613000" />
       <workItem from="1567039139235" duration="6324000" />
       <workItem from="1582614873906" duration="879000" />
-      <workItem from="1582851713778" duration="4906000" />
+      <workItem from="1582851713778" duration="19105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94460000" />
+    <option name="totallyTimeSpent" value="108659000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="677" y="3" width="1230" height="1016" extended-state="1" />
+    <frame x="663" y="12" width="1230" height="1016" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19028006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

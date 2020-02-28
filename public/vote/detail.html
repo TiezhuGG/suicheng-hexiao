@@ -65,7 +65,7 @@
 					<div @click="but">{{vote.notaudit==-1?'立即报名':''}}{{vote.notaudit==0?'审核中':''}}{{vote.notaudit==2?'审核未通过 重新报名':''}}{{vote.notaudit==1&&vote.myjoin.data.pay==0?'已审核 待支付':''}}{{vote.notaudit==1&&vote.myjoin.data.pay==1?'查看报名信息':''}}</div>
 				</div> -->
 				<div class="flex" :class="{on:pop.wx}">
-					<div @click="but">{{vote.notaudit==-1?'立即报名':''}}{{vote.notaudit==0?'审核中':''}}{{vote.notaudit==2?'审核未通过 重新报名':''}}{{vote.notaudit==1&&vote.myjoin.data.pay==0?'已审核 待支付':''}}{{vote.notaudit==1&&vote.myjoin.data.pay==1?'查看报名信息':''}}</div>
+					<div @click="but">立即报名</div>
 				</div>
 			</div>
 			
@@ -141,6 +141,7 @@
 					<div class="op">
 						<div class="but" @click="joins">提交</div>
 						<div class="close" @click="pops('froms')">取消</div>
+						<div class="skip" @click="enroll">跳过，后面补充</div>
 					</div>
 				</div>
 			</div>

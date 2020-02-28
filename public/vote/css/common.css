@@ -494,6 +494,7 @@ img {
 }
 #app .froms .pop .op {
 	display: flex;
+	flex-wrap: wrap;
 	font-size: .28rem;
 	text-align: center;
 	padding: .4rem 0 .6rem 0;
@@ -518,6 +519,19 @@ img {
 	line-height: .62rem;
 	margin-left: .3rem;
 }
+
+#app .froms .pop .op .skip {
+	width:4.89rem;
+	height:.64rem;
+	border-radius:.04rem;
+	text-align: center;
+	line-height: .64rem;
+	color: #16C9C6;
+	margin-left: .45rem;
+	margin-top: .3rem;
+	border:.01rem solid rgba(22,201,198,1);
+}
+
 #app .join {
 	position: fixed;
 	top: 0;

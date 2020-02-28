@@ -27,7 +27,7 @@
     margin-bottom: 0.2rem;
 }
 
-.item:nth-last-child(1)::after, .write-off-item:nth-last-child(1)::after,.write-yes-item:nth-last-child(1)::after  {
+#me .content .item:nth-last-child(1)::after, .write-off-item:nth-last-child(1)::after,.write-yes-item:nth-last-child(1)::after  {
     content: '';
     padding-bottom: 1.2rem;
 }

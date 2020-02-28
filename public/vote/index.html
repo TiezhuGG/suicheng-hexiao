@@ -28,9 +28,11 @@
                 <p class="time">报名时间: {{item.statrtime}}至{{item.signuptime}}</p>
                 <div class="bottom">
                     <p class="date">开标: {{item.signupendtime}}</p>
-                    <a :href="'http://' + item.url_address"
+                    <!-- <a :href="'http://' + item.url_address"
                         :class="{sign_up: item.is_sign !== 0 }"
-                    >{{item.is_sign === 0 ?  '我要报名' : '已报名'}}</a>
+                    >{{item.is_sign === 0 ?  '我要报名' : '已报名'}}</a> -->
+                    <a :href="'http://' + item.url_address"
+                    >我要报名</a>
                 </div>
             </div>
         </div>
@@ -82,19 +84,19 @@
                         this.is_sign_up = true
                     }
                 },
-                async userinfo() {
+				async userinfo() {
                     const url = encodeURI(window.location.href);
-					const code = await this.getQueryString('code')
+                    const code = await this.getQueryString('code')
                     if (code == '' || code == null) {
                         window.location.href =
                             'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + this
-                            .config.appid + '&redirect_uri=' + this.url + 'vote/index.html' +
+                            .config.appid + '&redirect_uri=' + url  +
                             '&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
                     } else {
-						this.config.code = code;
+                        this.config.code = code;
                         const res = await axios.get(`${this.url}api/Getwxuser/get_user_all`, {
                             params: {
-                                code: this.config.code
+                                code: code
                             }
                         })
                         // 微信授权成功与否
@@ -105,7 +107,7 @@
                             // 缓存用户openid, 用户名username,用户userid
                             localStorage.setItem('openid', this.config.openid)
                             localStorage.setItem('username', this.config.name)
-							localStorage.setItem('userid', this.config.uid)
+                            localStorage.setItem('userid', this.config.uid)
                             // 获取活动列表
                             this.getList();
                         } else {

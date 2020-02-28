@@ -1,0 +1,220 @@
+/* index.html */
+.wrap {
+    background-color: #F7F7F7;
+    padding-bottom: 0.98rem;
+}
+
+.me-wrap {
+    background-color: #F7F7F7 !important;
+}
+
+.header {
+    height: 3.4rem;
+    background-color: #fff;
+}
+
+.header img {
+    width: 6.9rem;
+    height: 3rem;
+    margin: 0.2rem 0.3rem
+}
+
+.content .item, .content .write-off-item, .content .write-yes-item {
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.item:nth-last-child(1)::after, .write-off-item:nth-last-child(1)::after,.write-yes-item:nth-last-child(1)::after  {
+    content: '';
+    padding-bottom: 1.2rem;
+}
+
+.content .item .top, .content .write-off-item .top, .content .write-yes-item .top {
+    display: flex;
+    margin-top: 0.38rem;
+}
+
+.content .item .top img, .content .write-off-item .top img, .content .write-yes-item .top img {
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-left: 0.3rem;
+}
+
+.content .item .top .title, .content .write-off-item .top .title, .content .write-yes-item .top .title {
+    width: 5.44rem;
+    height: 0.34rem;
+    font-size: 0.34rem;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    line-height: 0.34rem;
+    margin-left: 0.2rem;
+    margin-top: 0.04rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content .item .time, .content .write-off-item .time, .content .write-yes-item .time {
+    margin-top: 0.96rem;
+    margin-left: 0.3rem;
+    font-size: 0.24rem;
+    font-weight: 400;
+    color: #999;
+}
+
+.content .item .bottom, .content .write-off-item .bottom, .content .write-yes-item .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.16rem;
+    margin-bottom: 0.2rem
+}
+
+.content .item .bottom .date, .content .write-off-item .bottom .date, .content .write-yes-item .bottom .date {
+    margin-top: 0.24rem;
+    margin-left: 0.3rem;
+    font-size: 0.24rem;
+    color: #999;
+}
+
+.content .item .bottom a, .content .write-off-item .bottom a, .content .write-yes-item .bottom a {
+    width: 1.4rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    text-align: center;
+    margin-right: 0.3rem;
+    font-size: 0.24rem;
+    color: #fff;
+    background-color: #16C9C6;
+    border-radius: 0.24rem;
+}
+
+.sign_up {
+    background-color: #CED6EA !important;
+}
+
+.content .item .bottom .status_yes, .content .write-off-item .bottom .status_yes, .content .write-yes-item .bottom .status_yes {
+    margin-top: 0.24rem;
+    margin-right: 0.28rem;
+    font-size: 0.28rem;
+    color: #16C9C6;
+}
+
+.content .item .bottom .status_no, .content .write-off-item .bottom .status_no, .content .write-yes-item .bottom .status_no {
+    margin-top: 0.24rem;
+    margin-right: 0.28rem;
+    font-size: 0.28rem;
+    color: #666;
+}
+
+
+/* 底部导航 */
+.tabBar {
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 0.98rem;
+    border-top: 1px solid #ddd;
+}
+
+.tabBar .tab-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.1rem;
+}
+
+.tabBar .tab-item a img {
+    width: 0.44rem;
+    height: 0.44rem;
+}
+
+.tabBar .tab-item a span {
+    width: 0.48rem;
+    height: 0.24rem;
+    font-size: 0.24rem;
+    color: #16C9C6;
+    margin-top: 0.1rem;
+}
+
+/* me.html */
+.me-wrap {
+    background-color: #F7F7F7;
+}
+
+.me-header .background {
+    width: 100%;
+    height: 4.08rem;
+}
+
+.me-header .avatar {
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 1.48rem;
+    left: 3.2rem;
+    bottom: 1.5rem;
+    right: 3.2rem;
+}
+
+.me-header .username {
+    position: absolute;
+    width: 1.86rem;
+    height: 0.3rem;
+    text-align: center;
+    top: 2.98rem;
+    left: 2.82rem;
+    right: 2.82rem;
+    bottom: 0.8rem;
+}
+
+.write-off {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.36rem;
+    background-color: #fff;
+    
+}
+
+.unfinished {
+    font-size: 0.28rem;
+    color: #999;
+}
+
+.write-off-no {
+    font-size: 0.28rem;
+    color: #999;
+}
+
+.write-off-yes {
+    font-size: 0.32rem;
+    color: #999;
+}
+
+.activeColor {
+    color: #333;
+    font-size: 0.32rem
+}
+
+.data_upload {
+    width: 1.76rem;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    font-size: 0.24rem;
+    color: #16C9C6;
+    text-align: center;
+    margin-right: 0.3rem;
+    margin-top: 0.1rem;
+    border-radius: 0.28rem;
+    border: 0.01rem solid #16C9C6;
+}

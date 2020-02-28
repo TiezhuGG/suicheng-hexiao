@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/me.css">
+    <title>个人中心</title>
+</head>
+
+<body>
+    <div id="me" class="me-wrap">
+        <div class="me-header">
+            <img class="background" src="./imgs/me-background.png" alt="">
+            <img class="avatar" src="./imgs/user.png" alt="">
+            <p class="username">{{username}}</p>
+        </div>
+        <div class="content">
+            <div class="write-off">
+                <button class="unfinished" @click="unfinished()" :class="{activeColor: is_sign===2}">待完善资料</button>
+                <button class="write-off-no" @click="writeOffNo()" :class="{activeColor: is_sign===0}">待核销</button>
+                <button class="write-off-yes" @click="writeOffYes()" :class="{activeColor: is_sign===1}">已核销</button>
+            </div>
+            <!-- 待完善资料 -->
+            <div class="item" v-for="(item,index) in unfinished_list" :key="item.id" v-if="is_sign===2">
+                <div class="top">
+                    <img src="./imgs/2.png" alt="">
+                    <p class="title">{{item.activityname}}</p>
+                </div>
+                <p class="time">报名时间: {{item.signuptime}}至{{item.signupendtime}}</p>
+                <div class="bottom">
+                    <p class="date">开标: {{item.statrtime}}</p>
+                    <p class="data_upload" @click="getSignInfo(item.id)" v-if="item.is_sign === 1">上传公司资料</p>
+                </div>
+            </div>
+            <!-- 待核销 -->
+            <div class="write-off-item" v-for="(item,index) in no_sign_list" :key="item.id" v-if="is_sign===0">
+                <div class="top">
+                    <img src="./imgs/2.png" alt="">
+                    <p class="title">{{item.activity_name}}</p>
+                </div>
+                <p class="time">报名时间: {{item.activity[0].signuptime}}至{{item.activity[0].signupendtime}}</p>
+                <div class="bottom">
+                    <p class="date">开标: {{item.activity[0].statrtime}}</p>
+                    <p class="status_no">待核销</p>
+                </div>
+            </div>
+            <!-- 已核销 -->
+            <div class="write-yes-item" v-for="(item,index) in is_sign_list" v-if="is_sign===1">
+                <div class="top">
+                    <img src="./imgs/1.png" alt="">
+                    <p class="title">{{item.activity_name}}</p>
+                </div>
+                <p class="time">报名时间: {{item.activity[0].signuptime}}至{{item.activity[0].signupendtime}}</p>
+                <div class="bottom">
+                    <p class="date">开标: {{item.activity[0].statrtime}}</p>
+                    <p class="status_yes">已核销</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 填写表单 -->
+        <div class="froms" :class="{in:pop.froms}">
+            <div class="mask" @click="pops('froms')"></div>
+            <div class="pop">
+                <div class="title">请填写报名表单</div>
+                <div class="inp">
+                    <div class="i" v-if="item.type==0" v-for="(item,index) in vote.custom" :key="index">
+                        <div>{{item.title}}</div>
+                        <input type="text" v-model="item.content" :placeholder="'请填写'+item.title">
+                    </div>
+                </div>
+                <div class="file">
+                    <div class="i" v-if="item.type==1" v-for="(item,index) in vote.custom" :key="index">
+                        <div>{{item.title}}</div>
+                        <p>{{item.futitle}}</p>
+                        <img :src="item.content||'imgs/i13.png'" @click="choiceImg(index)" />
+                    </div>
+                </div>
+                <div class="agree">
+                    <img :src="join.agree?'imgs/i15.png':'imgs/i14.png'" @click="agree" />
+                    <span>我已阅读并同意</span>
+                    <a href="agree.html">《活动用户服务协议》</a>
+                </div>
+                <div class="op">
+                    <div class="but" @click="joins">提交</div>
+                    <div class="close" @click="pops('froms')">取消</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 底部导航 -->
+        <div class="tabBar">
+            <div class="tab-item">
+                <a href="./index.html">
+                    <img src="./imgs/index2.png"></img>
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="tab-item">
+                <a href="./me.html">
+                    <img src="./imgs/me2.png"></img>
+                    <span style="color: #16C9C6;">我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const me = new Vue({
+            el: '#me',
+            data: {
+                url: 'http://hx.le-cx.com',
+                openid: localStorage.getItem('openid') || '',
+                username: '',
+                userid: localStorage.getItem('userid') || '',
+                is_sign_list: [],
+                no_sign_list: [],
+                unfinished_list: [],
+                is_sign: 2,
+                pop: {
+                    wx: false,
+                    option: false,
+                    froms: false,
+                    join: false,
+                    type: 1
+                },
+                config: {
+                    res: '',
+                    code: '',
+                    uid: '',
+                    openid: '',
+                    name: '',
+                    vid: '',
+                    appid: 'wxd6f30cb38ce4a273',
+                    filekey: ''
+                },
+                vote: {},
+                join: {
+                    agree: false,
+                    paperkey: -1
+                }
+            },
+            created() {
+                this.username = localStorage.getItem('username') ? localStorage.getItem('username') : '请授权登录'
+                this.getIsSignList()
+                this.getNoSignList()
+                this.getUnfinishedList()
+            },
+            methods: {
+                // 获取待完善列表
+                async getUnfinishedList() {
+                    const res = await axios.get(`${this.url}/api/Activity/getList`, {
+                        params: {
+                            openid: this.openid,
+                        }
+                    })
+                    for (let val of res.data.data) {
+                        if (val.cusform === 0) {
+                            this.unfinished_list.push(val)
+                        }
+                    }
+                },
+                // 获取已核销列表
+                async getIsSignList() {
+                    const res = await axios.get(`${this.url}/api/Activity/myActivity`, {
+                        params: {
+                            openid: this.openid,
+                            is_sign: 1
+                        }
+                    })
+                    this.is_sign_list = res.data.data
+                },
+                // 获取待核销列表
+                async getNoSignList() {
+                    const res = await axios.get(`${this.url}/api/Activity/myActivity`, {
+                        params: {
+                            openid: this.openid,
+                            is_sign: 0
+                        }
+                    })
+                    this.no_sign_list = res.data.data
+                },
+                async writeOffNo() {
+                    this.is_sign = 0
+                },
+                async writeOffYes() {
+                    this.is_sign = 1
+                },
+                async unfinished() {
+                    this.is_sign = 2
+                },
+
+                async getSignInfo(id) {
+                    const res = await axios.get(`${this.url}/api/sign/getsigninfo`, {
+                        params: {
+                            activity_id: id,
+                            user_id: this.userid
+                        }
+                    })
+                    this.getvote(res, id)
+                },
+
+                async getvote(myjoin, id) {
+                    const res = await axios.get(`${this.url}/api/activity/getactivityinfo`, {
+                        params: {
+                            activity_id: id,
+                            openid: this.openid
+                        }
+                    })
+                    if (res.data.code == 200) {
+                        res.data.data.custom = this.addkey(res.data.data.custom, 'content');
+                        res.data.data.myjoin = myjoin;
+                        this.vote = res.data.data;
+                        // 弹出表单
+                        this.but()
+                    } else {
+                        alert(res.data.msg);
+                    }
+                },
+
+                paper(val) {
+                    var _ = this;
+                    _.join.paperkey = val;
+                },
+                pops(key) {
+                    var _ = this;
+                    _.pop[key] = !_.pop[key];
+                },
+                addkey(arr, name) {
+                    for (var i = 0; i < arr.length; i++) {
+                        arr[i][name] = '';
+                    }
+                    return arr;
+                },
+                GetQueryString(name) {
+                    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                    var r = window.location.search.substr(1).match(reg); //search,查询？后面的参数，并匹配正则
+                    if (r != null) return r[2];
+                    return null;
+                },
+                agree() {
+                    var _ = this;
+                    _.join.agree = !_.join.agree;
+                },
+                choiceImg(index) {
+                    var _ = this;
+                    _.config.filekey = index;
+                    _.$refs.filElem.dispatchEvent(new MouseEvent('click'))
+                },
+                but() {
+                    // 去填写表单
+                    this.pops('froms');
+                },
+
+                async joins() {
+                    var _ = this;
+                    var custom = _.vote.custom;
+
+                    // 表单验证
+                    var isok = false;
+                    for (var i = 0; i < custom.length; i++) {
+                        if (isok) {
+                            return;
+                        }
+                        if (custom[i].content == '') {
+                            isok = true;
+                            if (custom[i].type == 0) {
+                                alert('请填写' + custom[i].title);
+                            } else {
+                                alert('请上传' + custom[i].title);
+                            }
+                        }
+                    }
+                    if (isok) {
+                        return;
+                    }
+
+                    if (!_.join.agree) {
+                        alert('请同意活动用户服务协议');
+                        return;
+                    }
+
+                    const res = await axios.get(`${_.url}/api/sign/form`, {
+                        params: {
+                            vip_id: parseInt(_.userid),
+                            activity_id: _.vote.id,
+                            cusform: JSON.stringify(_.vote.custom)
+                        }
+                    })
+
+                    if (res.data.code === 200) {
+                        window.location.href = _.url + '/vote/me.html'
+                    } else {
+                        alert(res.data.msg)
+                    }
+                },
+            }
+        })
+    </script>
+</body>
+
+</html>

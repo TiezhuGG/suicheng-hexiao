@@ -6,16 +6,16 @@
 		<script src="js/rem.js"></script>
 		<script src="https://cn.vuejs.org/js/vue.min.js"></script>
 		<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
-		<script src="js/common.js"></script>
+		<script src="js/common.js?v-110"></script>
 		<title>核销签到</title>
-		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/common.css?v-100">
 	</head>
 	<body>
 		<div id="confirm">
 			<!-- 核销 -->
-			<div class="confirm" v-if="code==200">
-				<img src="imgs/i20.png" />
-				<div class="tip">核销签到成功</div>
+			<div class="confirm" >
+				<img src="imgs/i20.png" v-if="code==200"/>
+				<div class="tip">{{code==200 ? '核销签到成功' : '核销签到失败'}}</div>
 				<!-- <div class="but">确定</div> -->
 			</div>
 		</div>
@@ -23,7 +23,7 @@
 			var app = new Vue({
 				el: '#confirm',
 				data: {
-					url: 'http://hx.le-cx.com/',
+					url: '',
 					code:0,
 					config: {
 						res:'',
@@ -32,71 +32,90 @@
 						openid:'',
 						name:'',
 						pid:'',
-						appid: 'wxd6f30cb38ce4a273'
+						appid: ''
 					} 
 				},
 				created: function () {
-					var _ = this;
-					_.userinfo(); 
+					// var _ = this;
+					// _.userinfo();
 					// _.test();
+					this.url = localStorage.getItem('url')
+					this.config.appid = localStorage.getItem('appid')
+					this.config.openid = localStorage.getItem('openid') ? localStorage.getItem('openid') : ''
+					this.config.uid = localStorage.getItem('userid')
+					this.config.pid = this.GetQueryString('paper_id');
+					if(this.config.openid) {
+						this.confirm()
+					}
 				},
 				methods: {
-					test(){
-						var _ = this;
-						_.config.uid = 7;
-						_.config.openid = 'ovvUKwoerIWLGoSupJhv5QGO32gs';
-						_.config.name = '也许';
-						_.config.pid = _.GetQueryString('paper_id');
-						
-						axios.get(_.url+'api/sign/hexiao', {
+					confirm(){
+						axios.get(this.url+'api/sign/hexiao', {
 							params: {
-								signlist_id: _.config.pid,
-								openid: _.config.openid
+								signlist_id: this.config.pid,
+								openid: this.config.openid
 							}
 						}).then(function (res) {
-							alert(res.data.Msg);
+							this.code = res.data.code
+							alert(res.data.msg);
 						});
 					},
-					userinfo(){
-						var _ = this;
-						var url = encodeURI(window.location.href);
-						var code = _.GetQueryString('code');
-						// var code = '021eDoYm1ZWJXq00mhZm1HeyYm1eDoY0';
-						if (code==''||code==null){
-							window.location.href='https://open.weixin.qq.com/connect/oauth2/authorize?appid='+_.config.appid+'&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
-						}else{
-							_.config.code = code;
-			
-								// _.config.res = code;
-							axios.get(_.url+'api/Getwxuser/get_user_all', {
-								params: {
-									code: code
-								}
-							}).then(function (res) {
-								if(res.data.code==200){
-									_.config.uid = res.data.userid;
-									_.config.openid = res.data.openid;
-									_.config.name = res.data.name;
-									_.config.pid = _.GetQueryString('paper_id');
-									
-									axios.get(_.url+'api/sign/hexiao', {
-										params: {
-											signlist_id: _.config.pid,
-											openid: _.config.openid
-										}
-									}).then(function (res) {
-										// alert(JSON.stringify(res));
-										_.code = res.data.code;
-										if(_.code!=200){
-											alert(res.data.msg);
-										}
-									});
-								}else{
-									window.location.href='https://open.weixin.qq.com/connect/oauth2/authorize?appid='+_.config.appid+'&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
-								}
-							});
-						}
-					},
+					// test(){
+					// 	var _ = this;
+					// 	_.config.uid = 7;
+					// 	_.config.openid = 'ovvUKwoerIWLGoSupJhv5QGO32gs';
+					// 	_.config.name = '也许';
+					// 	_.config.pid = _.GetQueryString('paper_id');
+					//
+					// 	axios.get(_.url+'api/sign/hexiao', {
+					// 		params: {
+					// 			signlist_id: _.config.pid,
+					// 			openid: _.config.openid
+					// 		}
+					// 	}).then(function (res) {
+					// 		alert(res.data.Msg);
+					// 	});
+					// },
+					// userinfo(){
+					// 	var _ = this;
+					// 	var url = encodeURI(window.location.href);
+					// 	var code = _.GetQueryString('code');
+					// 	// var code = '021eDoYm1ZWJXq00mhZm1HeyYm1eDoY0';
+					// 	if (code==''||code==null){
+					// 		window.location.href='https://open.weixin.qq.com/connect/oauth2/authorize?appid='+_.config.appid+'&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
+					// 	}else{
+					// 		_.config.code = code;
+					//
+					// 			// _.config.res = code;
+					// 		axios.get(_.url+'api/Getwxuser/get_user_all', {
+					// 			params: {
+					// 				code: code
+					// 			}
+					// 		}).then(function (res) {
+					// 			if(res.data.code==200){
+					// 				_.config.uid = res.data.userid;
+					// 				_.config.openid = res.data.openid;
+					// 				_.config.name = res.data.name;
+					// 				_.config.pid = _.GetQueryString('paper_id');
+					//
+					// 				axios.get(_.url+'api/sign/hexiao', {
+					// 					params: {
+					// 						signlist_id: _.config.pid,
+					// 						openid: _.config.openid
+					// 					}
+					// 				}).then(function (res) {
+					// 					// alert(JSON.stringify(res));
+					// 					_.code = res.data.code;
+					// 					if(_.code!=200){
+					// 						alert(res.data.msg);
+					// 					}
+					// 				});
+					// 			}else{
+					// 				window.location.href='https://open.weixin.qq.com/connect/oauth2/authorize?appid='+_.config.appid+'&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect';
+					// 			}
+					// 		});
+					// 	}
+					// },
 					GetQueryString(name){
 					    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
 					    var r = window.location.search.substr(1).match(reg);//search,查询？后面的参数，并匹配正则

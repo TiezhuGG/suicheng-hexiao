@@ -24,7 +24,7 @@
 			var app = new Vue({
 				el: '#agree',
 				data: {
-					url: 'http://hx.le-cx.com/',
+					url: '',
 					code:'',
 					config: {
 						res:'',
@@ -33,13 +33,13 @@
 						openid:'',
 						name:'',
 						pid:'',
-						appid: 'wxd6f30cb38ce4a273'
+						appid: ''
 					} 
 				},
 				created: function () {
-					var _ = this;
-					_.userinfo(); 
-					// _.test();
+					this.url = localStorage.getItem('url')
+					this.config.appid = localStorage.getItem('appid')
+					this.userinfo();
 				},
 				methods: {
 					test(){

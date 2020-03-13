@@ -6,7 +6,6 @@
 		<script src="js/rem.js"></script>
 		<script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
 		<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
-		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 		<title>活动</title>
 		<link rel="stylesheet" href="css/common.css?v-6">
 	</head>
@@ -103,7 +102,7 @@
 						</div>
 					</div>
 					<div class="list">
-						<div class="i" :class="{in:index==join.paperkey}" @click='paper(index)' v-for="(item,index) in vote.paper" :key="index">
+						<div class="i" :class="{in:index==join.paperkey}" @click='paper(index, item.charge, item.id)' v-for="(item,index) in vote.paper" :key="index">
 							<img src="imgs/i12.png" />
 							<div class="name">
 								{{item.papername}}
@@ -149,16 +148,16 @@
 			
 			<!-- 报名成功弹窗 -->
 			<div class="join" :class="{in:pop.join}">
-<!--				<div class="ing" v-if="vote.notaudit!=1">-->
-<!--					<div class="mask" @click="pops('join')"></div>-->
-<!--					<div class="pop">-->
-<!--						<img src="imgs/i16.png" class="close" @click="pops('join')">-->
-<!--						<img src="imgs/i17.png" class="i1">-->
-<!--						<div class="title">报名审核中</div>-->
-<!--						<div class="tips">您的报名正在审核中，请您耐心等待</div>-->
-<!--						<img src="imgs/i19.png" class="i2">-->
-<!--					</div>-->
-<!--				</div>-->
+				<!-- <div class="ing" v-if="vote.notaudit!=1">
+					<div class="mask" @click="pops('join')"></div>
+					<div class="pop">
+						<img src="imgs/i16.png" class="close" @click="pops('join')">
+						<img src="imgs/i17.png" class="i1">
+						<div class="title">报名审核中</div>
+						<div class="tips">您的报名正在审核中，请您耐心等待</div>
+						<img src="imgs/i19.png" class="i2">
+					</div>
+				</div> -->
 				<div class="success" v-if="vote.notaudit">
 					<div class="mask" @click="pops('join')"></div>
 					<div class="pop">
@@ -172,7 +171,7 @@
 			</div>
 		</div>
 		<!-- <script src="js/common.js"></script> -->
-		<script src="js/vue.js?v-120"></script>
+		<script src="js/vue.js?v-128"></script>
 		<!-- <script>
 			var url = window.location.href;
 			alert(url);

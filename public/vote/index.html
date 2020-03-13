@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
-    <link rel="stylesheet" href="./css/reset.css?v-10">
     <script src="./js/rem.js?v-11"></script>
-    <link rel="stylesheet" href="./css/index.css?v-13">
-    <link rel="stylesheet" href="css/common.css?v-6">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css?v-1">
+    <link rel="stylesheet" href="css/common.css">
     <title>首页</title>
 </head>
 
@@ -54,6 +54,7 @@
     </div>
 
     <script>
+
         var app = new Vue({
             el: '#web-index',
             data: {
@@ -64,19 +65,21 @@
                     openid: '',
                     name: '',
                     vid: '',
-                    appid: 'wxd6f30cb38ce4a273',
+                    appid: '',
                 },
                 activityList: [],
                 is_sign_up: false,
             },
-            created() {
-                // 判断是否要重新授权
-                if (localStorage.getItem('openid')) {
-                    this.config.openid = localStorage.getItem('openid')
-                    this.getList()
-                } else {
-                    this.userinfo();
-                }
+            async created() {
+                // 通过openid判断是否要重新授权
+                this.config.openid = localStorage.getItem('openid') ? localStorage.getItem('openid') : ''
+                this.getAppid().then(() => {
+                    if(this.config.openid) {
+                        this.getList()
+                    } else {
+                        this.userinfo();
+                    }
+                })
             },
             methods: {
                 changeStatus(is_sign) {
@@ -84,6 +87,15 @@
                         this.is_sign_up = true
                     }
                 },
+                // 获取微信公众号appId
+                async getAppid() {
+                    const res = await axios.get(`${this.url}api/system`)
+                    this.config.appid = res.data.data.appid
+                    // 缓存url和appid
+                    localStorage.setItem('appid', this.config.appid)
+                    localStorage.setItem('url', this.url)
+                },
+                // 授权登录
 				async userinfo() {
                     const url = encodeURI(window.location.href);
                     const code = await this.getQueryString('code')
@@ -128,6 +140,10 @@
                     })
                     if (res.data.code == 200) {
                         this.activityList = res.data.data
+					} else if (res.data.code == 400) {
+						this.getAppid().then(() => {
+							this.userinfo();
+						})
 					}
 					// console.log(this.activityList)
                 },

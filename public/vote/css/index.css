@@ -27,9 +27,13 @@
     margin-bottom: 0.2rem;
 }
 
-#me .content .item:nth-last-child(1)::after, .write-off-item:nth-last-child(1)::after,.write-yes-item:nth-last-child(1)::after  {
+#me .content .item:last-child::after, #me .write-off-item:last-child::after,#me .write-yes-item:last-child::after  {
     content: '';
-    padding-bottom: 1.2rem;
+    padding-bottom: 1.7rem;
+}
+
+#me .content .item:last-child .top,#me .write-off-item:last-child .top,#me .write-yes-item:last-child .top {
+    margin-bottom: 0.36rem;
 }
 
 .content .item .top, .content .write-off-item .top, .content .write-yes-item .top {
@@ -57,12 +61,23 @@
     text-overflow: ellipsis;
 }
 
-.content .item .time, .content .write-off-item .time, .content .write-yes-item .time {
+.content .item .time ,#me .content .write-off-item .time, #me .content .write-yes-item .time{
     margin-top: 0.96rem;
     margin-left: 0.3rem;
     font-size: 0.24rem;
     font-weight: 400;
     color: #999;
+}
+
+#me .content .write-off-item .time, #me .content .write-yes-item .time, #me .content .item .time {
+    margin-top: 0.36rem !important;
+}
+
+#me .createtime {
+    color: #999;
+    font-size: 0.24rem;
+    margin-top: 0.36rem;
+    margin-left: 0.3rem;
 }
 
 .content .item .bottom, .content .write-off-item .bottom, .content .write-yes-item .bottom{
@@ -73,7 +88,7 @@
 }
 
 .content .item .bottom .date, .content .write-off-item .bottom .date, .content .write-yes-item .bottom .date {
-    margin-top: 0.24rem;
+    margin-top: 0.14rem;
     margin-left: 0.3rem;
     font-size: 0.24rem;
     color: #999;

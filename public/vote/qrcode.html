@@ -1,108 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <script src="js/rem.js"></script>
-    <script src="https://cn.vuejs.org/js/vue.min.js"></script>
-    <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
-    <script src="js/common.js"></script>
-    <!-- <script src="js/vue.js"></script> -->
-    <title>活动票</title>
-    <link rel="stylesheet" href="css/common.css?v-100">
-</head>
-<body>
-<div id="qr">
-    <!-- 门票二维码 -->
-    <div class="qr">
-        <div class="title">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="js/rem.js"></script>
+		<script src="https://cn.vuejs.org/js/vue.min.js"></script>
+		<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- <script src="js/vue.js"></script> -->
+		<title>活动票</title>
+		<link rel="stylesheet" href="css/common.css?v-100">
+	</head>
+	<body>
+		<div id="qr">
+			<!-- 门票二维码 -->
+			<div class="qr">
+				<div class="title">
 					<span>
 						{{vote.activityname}}
 					</span>
-        </div>
-        <div class="time">
-            <!-- <img src="imgs/i21.png" /> -->
-            <span>标段（包）：{{vote.block}}</span>
-        </div>
-        <div class="address">
-            <!-- <img src="imgs/i22.png" class="i" /> -->
-            <span>投标企业：{{vote.myjoin.data.data.cusform[0]['content']}}</span>
-            <!-- <img src="imgs/i23.png" class="right" /> -->
-        </div>
-        <div class="num">{{vote.myjoin.data.data.papernum}}</div>
-        <img :src="vote.myjoin.data.data.qrcode" class="qrimg"/>
-        <div class="more">
-            <span>姓名：{{vote.myjoin.data.data.username}}</span>
-            <span>票种：{{vote.myjoin.data.data.paper.papername}}</span>
-            <span>票价：{{vote.myjoin.data.data.paper.chargenum}}</span>
-            <span class="rad">状态：{{vote.myjoin.data.data.status==0?'有效票':'已签到'}}</span>
-        </div>
-    </div>
-    <div class="tip">
-        <div>温馨提示：</div>
-        <p>1.请不要把电子票随意分享给他人，以免被盗用。</p>
-        <p>2.入场时，请提前打开电子票，调亮手机屏幕，扫描二维码检票 人场，1人1票</p>
-    </div>
-</div>
-<script>
-    var app = new Vue({
-        el: '#qr',
-        data: {
-            url: 'http://hx.le-cx.com/',
-            openid: localStorage.getItem('openid') || '',
-            config: {
-                vid: '',
-                uid: ''
-            },
-            vote: {},
-            id: ''
-        },
-        created: function () {
-            var _ = this;
-            _.loadData();
-        },
-        methods: {
-            loadData() {
-                var _ = this;
-                _.config.vid = _.GetQueryString('activity_id');
-                _.config.uid = _.GetQueryString('user_id');
-                _.config.openid = _.GetQueryString('openid');
-                _.id = _.GetQueryString('id');
-                axios.get(_.url + 'api/sign/getsigninfo', {
-                    params: {
-                        activity_id: _.config.vid,
-                        id: _.id,
-                        user_id: _.config.uid
-                    }
-                }).then(function (res) {
-					_.getvote(res)
-                });
-            },
-            getvote(myjoin) {
-                var _ = this;
-                axios.get(_.url + 'api/activity/getactivityinfo', {
-                    params: {
-                        activity_id: _.config.vid,
-                        openid: _.config.openid
-                    }
-                }).then(function (res) {
-                    if (res.data.code == 200) {
-                        // res.data.data.custom = _.addkey(res.data.data.custom,'content');
-                        res.data.data.myjoin = myjoin;
-                        _.vote = res.data.data;
-                    } else {
-                        alert(res.data.msg);
-                    }
-                });
-            },
-            GetQueryString(name) {
-                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-                var r = window.location.search.substr(1).match(reg);//search,查询？后面的参数，并匹配正则
-                if (r != null) return r[2];
-                return null;
-            },
-        }
-    })
-</script>
-</body>
+				</div>
+				<div class="time">
+					<!-- <img src="imgs/i21.png" /> -->
+					<span>标段（包）：{{vote.block}}</span>
+				</div>
+				<div class="address">
+					<!-- <img src="imgs/i22.png" class="i" /> -->
+					<span>投标企业：{{vote.myjoin.data.data.cusform[0]['content']}}</span>
+					<!-- <img src="imgs/i23.png" class="right" /> -->
+				</div>
+				<div class="num">{{vote.myjoin.data.data.papernum}}</div>
+				<img :src="vote.myjoin.data.data.qrcode" class="qrimg" />
+				<div class="more">
+					<span>姓名：{{vote.myjoin.data.data.username}}</span>
+					<span>票种：{{vote.myjoin.data.data.paper.papername}}</span>
+					<span>票价：{{vote.myjoin.data.data.paper.chargenum}}</span>
+					<span class="rad">状态：{{vote.myjoin.data.data.status==0?'有效票':'已签到'}}</span>
+				</div>
+			</div>
+			<div class="tip">
+				<div>温馨提示：</div>
+				<p>1.请不要把电子票随意分享给他人，以免被盗用。</p>
+				<p>2.入场时，请提前打开电子票，调亮手机屏幕，扫描二维码检票 人场，1人1票</p>
+			</div>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#qr',
+				data: {
+					url: 'http://hx.le-cx.com/',
+					config:{
+						vid:'',
+						uid:''
+					},
+					vote:{},
+					id: ''
+				},
+				created: function () {
+					var _ = this;
+					_.loadData();
+				},
+				methods: {
+					loadData(){
+						var _ = this;
+						_.config.vid = _.GetQueryString('activity_id');
+						_.config.uid = _.GetQueryString('user_id');
+						_.config.openid = _.GetQueryString('openid');
+						_.id = _.GetQueryString('id');
+						axios.get(_.url+'api/sign/getsigninfo', {
+							params: {
+								activity_id: _.config.vid,
+								id: _.id,
+								user_id: _.config.uid
+							}
+						}).then(function (res) {
+							_.getvote(res);
+						});
+					},
+					getvote(myjoin){
+						var _ = this;
+						axios.get(_.url+'api/activity/getactivityinfo', {
+							params: {
+								activity_id: _.config.vid,
+								openid: _.config.openid
+							}
+						}).then(function (res) {
+							if(res.data.code==200){
+								// res.data.data.custom = _.addkey(res.data.data.custom,'content');
+								res.data.data.myjoin = myjoin;
+								_.vote = res.data.data;
+							}else{
+								alert(res.data.msg);
+							}
+						});
+					},
+					GetQueryString(name){
+						var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+						var r = window.location.search.substr(1).match(reg);//search,查询？后面的参数，并匹配正则
+						if(r!=null)return r[2]; return null;
+					}
+				}
+			})
+		</script>
+	</body>
 </html>

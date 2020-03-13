@@ -149,19 +149,19 @@ img {
 	background: linear-gradient(90deg,rgba(84,235,200,1),rgba(22,201,198,1));
 	border-radius: .08rem;
 }
-#me .index .content {
-	width: 7.5rem;
-	border-bottom: 1.16rem solid #F2F3F8;
-}
-#me .index .content .title {
-	padding: .37rem .3rem;
-	font-size: .32rem;
-	border-bottom: 1px solid #F2F3F8;
-}
-#me .index .content img {
-	width: 6.9rem;
-	padding: .3rem;
-}
+/*#me .index .content {*/
+/*	width: 7.5rem;*/
+/*	border-bottom: 1.16rem solid #F2F3F8;*/
+/*}*/
+/*#me .index .content .title {*/
+/*	padding: .37rem .3rem;*/
+/*	font-size: .32rem;*/
+/*	border-bottom: 1px solid #F2F3F8;*/
+/*}*/
+/*#me .index .content img {*/
+/*	width: 6.9rem;*/
+/*	padding: .3rem;*/
+/*}*/
 #me .index .flex {
 	position: fixed;
 	left: 0;
